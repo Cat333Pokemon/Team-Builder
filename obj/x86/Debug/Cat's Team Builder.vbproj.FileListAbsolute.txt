@@ -1,0 +1,25 @@
+C:\Users\Cat\AppData\Local\Temporary Projects\Cat's Team Builder\obj\x86\Debug\Cat_s_Team_Builder.Form1.resources
+C:\Users\Cat\AppData\Local\Temporary Projects\Cat's Team Builder\obj\x86\Debug\Cat_s_Team_Builder.Resources.resources
+C:\Users\Cat\AppData\Local\Temporary Projects\Cat's Team Builder\obj\x86\Debug\Cat's Team Builder.vbproj.GenerateResource.Cache
+C:\Users\Cat\AppData\Local\Temporary Projects\Cat's Team Builder\bin\Debug\VR Team Builder.exe
+C:\Users\Cat\AppData\Local\Temporary Projects\Cat's Team Builder\bin\Debug\VR Team Builder.pdb
+C:\Users\Cat\AppData\Local\Temporary Projects\Cat's Team Builder\bin\Debug\VR Team Builder.xml
+C:\Users\Cat\AppData\Local\Temporary Projects\Cat's Team Builder\obj\x86\Debug\VR Team Builder.exe
+C:\Users\Cat\AppData\Local\Temporary Projects\Cat's Team Builder\obj\x86\Debug\VR Team Builder.xml
+C:\Users\Cat\AppData\Local\Temporary Projects\Cat's Team Builder\obj\x86\Debug\VR Team Builder.pdb
+d:\documents\visual studio 2010\Projects\Cat's Team Builder\obj\x86\Debug\Cat's Team Builder.vbproj.GenerateResource.Cache
+d:\documents\visual studio 2010\Projects\Cat's Team Builder\bin\Debug\Pokedata.sdf
+d:\documents\visual studio 2010\Projects\Cat's Team Builder\bin\Debug\Team Builder by Cat.exe.config
+d:\documents\visual studio 2010\Projects\Cat's Team Builder\bin\Debug\Team Builder by Cat.exe.manifest
+d:\documents\visual studio 2010\Projects\Cat's Team Builder\bin\Debug\Team Builder by Cat.application
+d:\documents\visual studio 2010\Projects\Cat's Team Builder\bin\Debug\Team Builder by Cat.exe
+d:\documents\visual studio 2010\Projects\Cat's Team Builder\bin\Debug\Team Builder by Cat.pdb
+d:\documents\visual studio 2010\Projects\Cat's Team Builder\bin\Debug\Team Builder by Cat.xml
+d:\documents\visual studio 2010\Projects\Cat's Team Builder\obj\x86\Debug\Team_Builder.Form1.resources
+d:\documents\visual studio 2010\Projects\Cat's Team Builder\obj\x86\Debug\Team_Builder.Resources.resources
+d:\documents\visual studio 2010\Projects\Cat's Team Builder\obj\x86\Debug\Team Builder by Cat.exe.manifest
+d:\documents\visual studio 2010\Projects\Cat's Team Builder\obj\x86\Debug\Team Builder by Cat.application
+d:\documents\visual studio 2010\Projects\Cat's Team Builder\obj\x86\Debug\Team Builder by Cat.exe
+d:\documents\visual studio 2010\Projects\Cat's Team Builder\obj\x86\Debug\Team Builder by Cat.xml
+d:\documents\visual studio 2010\Projects\Cat's Team Builder\obj\x86\Debug\Team Builder by Cat.pdb
+d:\documents\visual studio 2010\Projects\Cat's Team Builder\obj\x86\Debug\Team_Builder.Help.resources

@@ -1,0 +1,16 @@
+d:\documents\visual studio 2010\Projects\Cat's Team Builder\bin\Release\Pokedata.sdf
+d:\documents\visual studio 2010\Projects\Cat's Team Builder\bin\Release\Team Builder by Cat.exe.config
+d:\documents\visual studio 2010\Projects\Cat's Team Builder\bin\Release\Team Builder by Cat.exe.manifest
+d:\documents\visual studio 2010\Projects\Cat's Team Builder\bin\Release\Team Builder by Cat.application
+d:\documents\visual studio 2010\Projects\Cat's Team Builder\bin\Release\Team Builder by Cat.exe
+d:\documents\visual studio 2010\Projects\Cat's Team Builder\bin\Release\Team Builder by Cat.pdb
+d:\documents\visual studio 2010\Projects\Cat's Team Builder\bin\Release\Team Builder by Cat.xml
+d:\documents\visual studio 2010\Projects\Cat's Team Builder\obj\x86\Release\Team_Builder.Form1.resources
+d:\documents\visual studio 2010\Projects\Cat's Team Builder\obj\x86\Release\Team_Builder.Help.resources
+d:\documents\visual studio 2010\Projects\Cat's Team Builder\obj\x86\Release\Team_Builder.Resources.resources
+d:\documents\visual studio 2010\Projects\Cat's Team Builder\obj\x86\Release\Cat's Team Builder.vbproj.GenerateResource.Cache
+d:\documents\visual studio 2010\Projects\Cat's Team Builder\obj\x86\Release\Team Builder by Cat.exe.manifest
+d:\documents\visual studio 2010\Projects\Cat's Team Builder\obj\x86\Release\Team Builder by Cat.application
+d:\documents\visual studio 2010\Projects\Cat's Team Builder\obj\x86\Release\Team Builder by Cat.exe
+d:\documents\visual studio 2010\Projects\Cat's Team Builder\obj\x86\Release\Team Builder by Cat.xml
+d:\documents\visual studio 2010\Projects\Cat's Team Builder\obj\x86\Release\Team Builder by Cat.pdb

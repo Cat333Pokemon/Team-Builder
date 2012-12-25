@@ -1,0 +1,1575 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7EDF3B9C-2D61-44B7-899C-93120B77E8A1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Team_Builder.My.MyApplication</StartupObject>
+    <RootNamespace>Team_Builder</RootNamespace>
+    <AssemblyName>Team Builder by Cat</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Team Builder by Cat.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Team Builder by Cat.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>A31B2FF54AD84A1B1896E61DFC6C4A59471C19CD</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Cat%27s Team Builder_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>AppIcon2.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SqlServerCe, Version=3.5.1.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Help.Designer.vb">
+      <DependentUpon>Help.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Help.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help.resx">
+      <DependentUpon>Help.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Cat%27s Team Builder_TemporaryKey.pfx" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AppIcon.ico" />
+    <Content Include="AppIcon2.ico" />
+    <Content Include="Pokedata.sdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\export_icon.gif" />
+    <None Include="Resources\import_icon.gif" />
+    <None Include="Resources\exit_icon.gif" />
+    <None Include="Resources\delete_icon.gif" />
+    <None Include="Resources\help_icon.gif" />
+    <None Include="Resources\spelon-berry.png" />
+    <None Include="Resources\spell-tag.png" />
+    <None Include="Resources\space-mail.png" />
+    <None Include="Resources\soul-dew.png" />
+    <None Include="Resources\soot-sack.png" />
+    <None Include="Resources\soothe-bell.png" />
+    <None Include="Resources\soft-sand.png" />
+    <None Include="Resources\soda-pop.png" />
+    <None Include="Resources\snow-mail.png" />
+    <None Include="Resources\smooth-rock.png" />
+    <None Include="Resources\smoke-ball.png" />
+    <None Include="Resources\slowpoketail.png" />
+    <None Include="Resources\sky-plate.png" />
+    <None Include="Resources\skull-fossil.png" />
+    <None Include="Resources\sitrus-berry.png" />
+    <None Include="Resources\silver-wing.png" />
+    <None Include="Resources\silverpowder.png" />
+    <None Include="Resources\silph-scope.png" />
+    <None Include="Resources\silk-scarf.png" />
+    <None Include="Resources\shuca-berry.png" />
+    <None Include="Resources\shock-drive.png" />
+    <None Include="Resources\shoal-shell.png" />
+    <None Include="Resources\shoal-salt.png" />
+    <None Include="Resources\shiny-stone.png" />
+    <None Include="Resources\shiny-charm.png" />
+    <None Include="Resources\shell-bell.png" />
+    <None Include="Resources\shed-shell.png" />
+    <None Include="Resources\sharp-beak.png" />
+    <None Include="Resources\shadow-mail.png" />
+    <None Include="Resources\secretpotion.png" />
+    <None Include="Resources\secret-key.png" />
+    <None Include="Resources\seal-case.png" />
+    <None Include="Resources\seal-bag.png" />
+    <None Include="Resources\sea-incense.png" />
+    <None Include="Resources\scope-lens.png" />
+    <None Include="Resources\scanner.png" />
+    <None Include="Resources\sapphire.png" />
+    <None Include="Resources\salac-berry.png" />
+    <None Include="Resources\safari-ball.png" />
+    <None Include="Resources\sacred-ash.png" />
+    <None Include="Resources\rule-book.png" />
+    <None Include="Resources\ruby.png" />
+    <None Include="Resources\rsvp-mail.png" />
+    <None Include="Resources\rowap-berry.png" />
+    <None Include="Resources\rose-incense.png" />
+    <None Include="Resources\root-fossil.png" />
+    <None Include="Resources\rocky-helmet.png" />
+    <None Include="Resources\rock-incense.png" />
+    <None Include="Resources\rock-gem.png" />
+    <None Include="Resources\rm-6-key.png" />
+    <None Include="Resources\rm-4-key.png" />
+    <None Include="Resources\rm-2-key.png" />
+    <None Include="Resources\rm-1-key.png" />
+    <None Include="Resources\ring-target.png" />
+    <None Include="Resources\rindo-berry.png" />
+    <None Include="Resources\revive.png" />
+    <None Include="Resources\revival-herb.png" />
+    <None Include="Resources\reveal-glass.png" />
+    <None Include="Resources\retro-mail.png" />
+    <None Include="Resources\resist-wing.png" />
+    <None Include="Resources\reset-urge.png" />
+    <None Include="Resources\reply-mail.png" />
+    <None Include="Resources\repel.png" />
+    <None Include="Resources\repeat-ball.png" />
+    <None Include="Resources\relic-vase.png" />
+    <None Include="Resources\relic-statue.png" />
+    <None Include="Resources\relic-silver.png" />
+    <None Include="Resources\relic-gold.png" />
+    <None Include="Resources\relic-crown.png" />
+    <None Include="Resources\relic-copper.png" />
+    <None Include="Resources\relic-band.png" />
+    <None Include="Resources\red-shard.png" />
+    <None Include="Resources\red-scarf.png" />
+    <None Include="Resources\red-scale.png" />
+    <None Include="Resources\red-orb.png" />
+    <None Include="Resources\red-flute.png" />
+    <None Include="Resources\red-chain.png" />
+    <None Include="Resources\red-card.png" />
+    <None Include="Resources\red-apricorn.png" />
+    <None Include="Resources\reaper-cloth.png" />
+    <None Include="Resources\razz-berry.png" />
+    <None Include="Resources\razor-fang.png" />
+    <None Include="Resources\razor-claw.png" />
+    <None Include="Resources\rawst-berry.png" />
+    <None Include="Resources\rare-candy.png" />
+    <None Include="Resources\rare-bone.png" />
+    <None Include="Resources\rainbow-wing.png" />
+    <None Include="Resources\rainbow-pass.png" />
+    <None Include="Resources\ragecandybar.png" />
+    <None Include="Resources\rabuta-berry.png" />
+    <None Include="Resources\quick-powder.png" />
+    <None Include="Resources\quick-claw.png" />
+    <None Include="Resources\quick-ball.png" />
+    <None Include="Resources\qualot-berry.png" />
+    <None Include="Resources\pure-incense.png" />
+    <None Include="Resources\psychic-gem.png" />
+    <None Include="Resources\protein.png" />
+    <None Include="Resources\protector.png" />
+    <None Include="Resources\prop-case.png" />
+    <None Include="Resources\prism-scale.png" />
+    <None Include="Resources\pretty-wing.png" />
+    <None Include="Resources\premier-ball.png" />
+    <None Include="Resources\pp-up.png" />
+    <None Include="Resources\pp-max.png" />
+    <None Include="Resources\power-weight.png" />
+    <None Include="Resources\power-lens.png" />
+    <None Include="Resources\power-herb.png" />
+    <None Include="Resources\power-bracer.png" />
+    <None Include="Resources\power-belt.png" />
+    <None Include="Resources\power-band.png" />
+    <None Include="Resources\power-anklet.png" />
+    <None Include="Resources\powder-jar.png" />
+    <None Include="Resources\potion.png" />
+    <None Include="Resources\pomeg-berry.png" />
+    <None Include="Resources\poke-toy.png" />
+    <None Include="Resources\poke-radar.png" />
+    <None Include="Resources\poke-flute.png" />
+    <None Include="Resources\poke-doll.png" />
+    <None Include="Resources\pokeblock-case.png" />
+    <None Include="Resources\poke-ball.png" />
+    <None Include="Resources\poison-gem.png" />
+    <None Include="Resources\poison-barb.png" />
+    <None Include="Resources\point-card.png" />
+    <None Include="Resources\poffin-case.png" />
+    <None Include="Resources\pnk-apricorn.png" />
+    <None Include="Resources\plume-fossil.png" />
+    <None Include="Resources\plasma-card.png" />
+    <None Include="Resources\pink-scarf.png" />
+    <None Include="Resources\pinap-berry.png" />
+    <None Include="Resources\photo-album.png" />
+    <None Include="Resources\petaya-berry.png" />
+    <None Include="Resources\persim-berry.png" />
+    <None Include="Resources\permit.png" />
+    <None Include="Resources\pecha-berry.png" />
+    <None Include="Resources\pearl-string.png" />
+    <None Include="Resources\pearl.png" />
+    <None Include="Resources\payapa-berry.png" />
+    <None Include="Resources\pass-orb.png" />
+    <None Include="Resources\passho-berry.png" />
+    <None Include="Resources\pass.png" />
+    <None Include="Resources\parlyz-heal.png" />
+    <None Include="Resources\park-ball.png" />
+    <None Include="Resources\parcel.png" />
+    <None Include="Resources\pamtre-berry.png" />
+    <None Include="Resources\pal-pad.png" />
+    <None Include="Resources\oval-stone.png" />
+    <None Include="Resources\oval-charm.png" />
+    <None Include="Resources\orange-mail.png" />
+    <None Include="Resources\oran-berry.png" />
+    <None Include="Resources\old-sea-map.png" />
+    <None Include="Resources\old-rod.png" />
+    <None Include="Resources\old-gateau.png" />
+    <None Include="Resources\old-charm.png" />
+    <None Include="Resources\old-amber.png" />
+    <None Include="Resources\odd-keystone.png" />
+    <None Include="Resources\odd-incense.png" />
+    <None Include="Resources\occa-berry.png" />
+    <None Include="Resources\oaks-parcel.png" />
+    <None Include="Resources\oaks-letter.png" />
+    <None Include="Resources\nugget.png" />
+    <None Include="Resources\normal-gem.png" />
+    <None Include="Resources\nomel-berry.png" />
+    <None Include="Resources\nevermeltice.png" />
+    <None Include="Resources\net-ball.png" />
+    <None Include="Resources\nest-ball.png" />
+    <None Include="Resources\nanab-berry.png" />
+    <None Include="Resources\mystic-water.png" />
+    <None Include="Resources\mysticticket.png" />
+    <None Include="Resources\mystery-egg.png" />
+    <None Include="Resources\muscle-wing.png" />
+    <None Include="Resources\muscle-band.png" />
+    <None Include="Resources\mosaic-mail.png" />
+    <None Include="Resources\moon-stone.png" />
+    <None Include="Resources\moon-ball.png" />
+    <None Include="Resources\moomoo-milk.png" />
+    <None Include="Resources\miracle-seed.png" />
+    <None Include="Resources\mind-plate.png" />
+    <None Include="Resources\micle-berry.png" />
+    <None Include="Resources\metronome.png" />
+    <None Include="Resources\meteorite.png" />
+    <None Include="Resources\metal-powder.png" />
+    <None Include="Resources\metal-coat.png" />
+    <None Include="Resources\mental-herb.png" />
+    <None Include="Resources\member-card.png" />
+    <None Include="Resources\medal-box.png" />
+    <None Include="Resources\mech-mail.png" />
+    <None Include="Resources\meadow-plate.png" />
+    <None Include="Resources\max-revive.png" />
+    <None Include="Resources\max-repel.png" />
+    <None Include="Resources\max-potion.png" />
+    <None Include="Resources\max-ether.png" />
+    <None Include="Resources\max-elixir.png" />
+    <None Include="Resources\master-ball.png" />
+    <None Include="Resources\magost-berry.png" />
+    <None Include="Resources\mago-berry.png" />
+    <None Include="Resources\magnet.png" />
+    <None Include="Resources\magma-stone.png" />
+    <None Include="Resources\magmarizer.png" />
+    <None Include="Resources\magma-emblem.png" />
+    <None Include="Resources\macho-brace.png" />
+    <None Include="Resources\machine-part.png" />
+    <None Include="Resources\mach-bike.png" />
+    <None Include="Resources\luxury-ball.png" />
+    <None Include="Resources\lustrous-orb.png" />
+    <None Include="Resources\lure-ball.png" />
+    <None Include="Resources\lunar-wing.png" />
+    <None Include="Resources\lum-berry.png" />
+    <None Include="Resources\lucky-punch.png" />
+    <None Include="Resources\lucky-egg.png" />
+    <None Include="Resources\luck-incense.png" />
+    <None Include="Resources\love-ball.png" />
+    <None Include="Resources\lost-item.png" />
+    <None Include="Resources\loot-sack.png" />
+    <None Include="Resources\lock-capsule.png" />
+    <None Include="Resources\like-mail.png" />
+    <None Include="Resources\light-stone.png" />
+    <None Include="Resources\light-clay.png" />
+    <None Include="Resources\light-ball.png" />
+    <None Include="Resources\lift-key.png" />
+    <None Include="Resources\life-orb.png" />
+    <None Include="Resources\liechi-berry.png" />
+    <None Include="Resources\liberty-pass.png" />
+    <None Include="Resources\level-ball.png" />
+    <None Include="Resources\letter.png" />
+    <None Include="Resources\leppa-berry.png" />
+    <None Include="Resources\lemonade.png" />
+    <None Include="Resources\leftovers.png" />
+    <None Include="Resources\leaf-stone.png" />
+    <None Include="Resources\lax-incense.png" />
+    <None Include="Resources\lava-cookie.png" />
+    <None Include="Resources\lansat-berry.png" />
+    <None Include="Resources\lagging-tail.png" />
+    <None Include="Resources\kings-rock.png" />
+    <None Include="Resources\kelpsy-berry.png" />
+    <None Include="Resources\kebia-berry.png" />
+    <None Include="Resources\kasib-berry.png" />
+    <None Include="Resources\journal.png" />
+    <None Include="Resources\jade-orb.png" />
+    <None Include="Resources\jaboca-berry.png" />
+    <None Include="Resources\item-urge.png" />
+    <None Include="Resources\item-drop.png" />
+    <None Include="Resources\iron-plate.png" />
+    <None Include="Resources\iron-ball.png" />
+    <None Include="Resources\iron.png" />
+    <None Include="Resources\insect-plate.png" />
+    <None Include="Resources\inquiry-mail.png" />
+    <None Include="Resources\icy-rock.png" />
+    <None Include="Resources\icicle-plate.png" />
+    <None Include="Resources\ice-heal.png" />
+    <None Include="Resources\ice-gem.png" />
+    <None Include="Resources\iapapa-berry.png" />
+    <None Include="Resources\hyper-potion.png" />
+    <None Include="Resources\hp-up.png" />
+    <None Include="Resources\honey.png" />
+    <None Include="Resources\hondew-berry.png" />
+    <None Include="Resources\hm-water.png" />
+    <None Include="Resources\hm-steel.png" />
+    <None Include="Resources\hm-rock.png" />
+    <None Include="Resources\hm-psychic.png" />
+    <None Include="Resources\hm-poison.png" />
+    <None Include="Resources\hm-normal.png" />
+    <None Include="Resources\hm-ice.png" />
+    <None Include="Resources\hm-ground.png" />
+    <None Include="Resources\hm-grass.png" />
+    <None Include="Resources\hm-ghost.png" />
+    <None Include="Resources\hm-flying.png" />
+    <None Include="Resources\hm-fire.png" />
+    <None Include="Resources\hm-fighting.png" />
+    <None Include="Resources\hm-electric.png" />
+    <None Include="Resources\hm-dragon.png" />
+    <None Include="Resources\hm-dark.png" />
+    <None Include="Resources\hm-bug.png" />
+    <None Include="Resources\helix-fossil.png" />
+    <None Include="Resources\heavy-ball.png" />
+    <None Include="Resources\heat-rock.png" />
+    <None Include="Resources\heart-scale.png" />
+    <None Include="Resources\heart-mail.png" />
+    <None Include="Resources\health-wing.png" />
+    <None Include="Resources\heal-powder.png" />
+    <None Include="Resources\heal-ball.png" />
+    <None Include="Resources\hard-stone.png" />
+    <None Include="Resources\harbor-mail.png" />
+    <None Include="Resources\haban-berry.png" />
+    <None Include="Resources\guard-spec.png" />
+    <None Include="Resources\grubby-hanky.png" />
+    <None Include="Resources\growth-mulch.png" />
+    <None Include="Resources\ground-gem.png" />
+    <None Include="Resources\grn-apricorn.png" />
+    <None Include="Resources\griseous-orb.png" />
+    <None Include="Resources\grip-claw.png" />
+    <None Include="Resources\grepa-berry.png" />
+    <None Include="Resources\greet-mail.png" />
+    <None Include="Resources\green-shard.png" />
+    <None Include="Resources\green-scarf.png" />
+    <None Include="Resources\great-ball.png" />
+    <None Include="Resources\grass-mail.png" />
+    <None Include="Resources\grass-gem.png" />
+    <None Include="Resources\gram-3.png" />
+    <None Include="Resources\gram-2.png" />
+    <None Include="Resources\gram-1.png" />
+    <None Include="Resources\gracidea.png" />
+    <None Include="Resources\gooey-mulch.png" />
+    <None Include="Resources\good-rod.png" />
+    <None Include="Resources\gold-teeth.png" />
+    <None Include="Resources\go-goggles.png" />
+    <None Include="Resources\god-stone.png" />
+    <None Include="Resources\glitter-mail.png" />
+    <None Include="Resources\ghost-gem.png" />
+    <None Include="Resources\genius-wing.png" />
+    <None Include="Resources\gb-sounds.png" />
+    <None Include="Resources\ganlon-berry.png" />
+    <None Include="Resources\galactic-key.png" />
+    <None Include="Resources\full-restore.png" />
+    <None Include="Resources\full-incense.png" />
+    <None Include="Resources\full-heal.png" />
+    <None Include="Resources\friend-ball.png" />
+    <None Include="Resources\fresh-water.png" />
+    <None Include="Resources\focus-sash.png" />
+    <None Include="Resources\focus-band.png" />
+    <None Include="Resources\flying-gem.png" />
+    <None Include="Resources\fluffy-tail.png" />
+    <None Include="Resources\float-stone.png" />
+    <None Include="Resources\flame-plate.png" />
+    <None Include="Resources\flame-orb.png" />
+    <None Include="Resources\flame-mail.png" />
+    <None Include="Resources\fist-plate.png" />
+    <None Include="Resources\fire-stone.png" />
+    <None Include="Resources\fire-gem.png" />
+    <None Include="Resources\figy-berry.png" />
+    <None Include="Resources\fighting-gem.png" />
+    <None Include="Resources\favored-mail.png" />
+    <None Include="Resources\fast-ball.png" />
+    <None Include="Resources\fashion-case.png" />
+    <None Include="Resources\fame-checker.png" />
+    <None Include="Resources\fab-mail.png" />
+    <None Include="Resources\exp-share.png" />
+    <None Include="Resources\explorer-kit.png" />
+    <None Include="Resources\expert-belt.png" />
+    <None Include="Resources\eviolite.png" />
+    <None Include="Resources\everstone.png" />
+    <None Include="Resources\ether.png" />
+    <None Include="Resources\escape-rope.png" />
+    <None Include="Resources\eon-ticket.png" />
+    <None Include="Resources\enigma-stone.png" />
+    <None Include="Resources\enigma-berry.png" />
+    <None Include="Resources\energy-root.png" />
+    <None Include="Resources\energypowder.png" />
+    <None Include="Resources\elixir.png" />
+    <None Include="Resources\electric-gem.png" />
+    <None Include="Resources\electirizer.png" />
+    <None Include="Resources\eject-button.png" />
+    <None Include="Resources\earth-plate.png" />
+    <None Include="Resources\dusk-stone.png" />
+    <None Include="Resources\dusk-ball.png" />
+    <None Include="Resources\durin-berry.png" />
+    <None Include="Resources\dubious-disc.png" />
+    <None Include="Resources\dropped-item.png" />
+    <None Include="Resources\dream-mail.png" />
+    <None Include="Resources\dream-ball.png" />
+    <None Include="Resources\dread-plate.png" />
+    <None Include="Resources\dragon-skull.png" />
+    <None Include="Resources\dragon-scale.png" />
+    <None Include="Resources\dragon-gem.png" />
+    <None Include="Resources\dragon-fang.png" />
+    <None Include="Resources\draco-plate.png" />
+    <None Include="Resources\dowsing-mchn.png" />
+    <None Include="Resources\douse-drive.png" />
+    <None Include="Resources\dome-fossil.png" />
+    <None Include="Resources\dna-splicers.png" />
+    <None Include="Resources\dive-ball.png" />
+    <None Include="Resources\dire-hit-3.png" />
+    <None Include="Resources\dire-hit-2.png" />
+    <None Include="Resources\dire-hit.png" />
+    <None Include="Resources\devon-scope.png" />
+    <None Include="Resources\devon-goods.png" />
+    <None Include="Resources\destiny-knot.png" />
+    <None Include="Resources\deepseatooth.png" />
+    <None Include="Resources\deepseascale.png" />
+    <None Include="Resources\dawn-stone.png" />
+    <None Include="Resources\data-card.png" />
+    <None Include="Resources\dark-stone.png" />
+    <None Include="Resources\dark-gem.png" />
+    <None Include="Resources\damp-rock.png" />
+    <None Include="Resources\damp-mulch.png" />
+    <None Include="Resources\custap-berry.png" />
+    <None Include="Resources\cover-fossil.png" />
+    <None Include="Resources\coupon-3.png" />
+    <None Include="Resources\coupon-2.png" />
+    <None Include="Resources\coupon-1.png" />
+    <None Include="Resources\cornn-berry.png" />
+    <None Include="Resources\contest-pass.png" />
+    <None Include="Resources\comet-shard.png" />
+    <None Include="Resources\colress-mchn.png" />
+    <None Include="Resources\colbur-berry.png" />
+    <None Include="Resources\coin-case.png" />
+    <None Include="Resources\coba-berry.png" />
+    <None Include="Resources\clever-wing.png" />
+    <None Include="Resources\clear-bell.png" />
+    <None Include="Resources\cleanse-tag.png" />
+    <None Include="Resources\claw-fossil.png" />
+    <None Include="Resources\chople-berry.png" />
+    <None Include="Resources\choice-specs.png" />
+    <None Include="Resources\choice-scarf.png" />
+    <None Include="Resources\choice-band.png" />
+    <None Include="Resources\chill-drive.png" />
+    <None Include="Resources\chilan-berry.png" />
+    <None Include="Resources\chesto-berry.png" />
+    <None Include="Resources\cherish-ball.png" />
+    <None Include="Resources\cheri-berry.png" />
+    <None Include="Resources\charti-berry.png" />
+    <None Include="Resources\charcoal.png" />
+    <None Include="Resources\cell-battery.png" />
+    <None Include="Resources\casteliacone.png" />
+    <None Include="Resources\card-key.png" />
+    <None Include="Resources\carbos.png" />
+    <None Include="Resources\calcium.png" />
+    <None Include="Resources\burn-heal.png" />
+    <None Include="Resources\burn-drive.png" />
+    <None Include="Resources\bug-gem.png" />
+    <None Include="Resources\bubble-mail.png" />
+    <None Include="Resources\brightpowder.png" />
+    <None Include="Resources\bridgemail-v.png" />
+    <None Include="Resources\bridgemail-t.png" />
+    <None Include="Resources\bridgemail-s.png" />
+    <None Include="Resources\bridgemail-m.png" />
+    <None Include="Resources\bridgemail-d.png" />
+    <None Include="Resources\brick-mail.png" />
+    <None Include="Resources\bluk-berry.png" />
+    <None Include="Resources\blue-shard.png" />
+    <None Include="Resources\blue-scarf.png" />
+    <None Include="Resources\blue-orb.png" />
+    <None Include="Resources\blue-flute.png" />
+    <None Include="Resources\blue-card.png" />
+    <None Include="Resources\blu-apricorn.png" />
+    <None Include="Resources\bloom-mail.png" />
+    <None Include="Resources\blk-apricorn.png" />
+    <None Include="Resources\black-sludge.png" />
+    <None Include="Resources\blackglasses.png" />
+    <None Include="Resources\black-flute.png" />
+    <None Include="Resources\black-belt.png" />
+    <None Include="Resources\binding-band.png" />
+    <None Include="Resources\bike-voucher.png" />
+    <None Include="Resources\big-root.png" />
+    <None Include="Resources\big-pearl.png" />
+    <None Include="Resources\big-nugget.png" />
+    <None Include="Resources\big-mushroom.png" />
+    <None Include="Resources\bicycle.png" />
+    <None Include="Resources\berry-pouch.png" />
+    <None Include="Resources\berry-pots.png" />
+    <None Include="Resources\berry-juice.png" />
+    <None Include="Resources\belue-berry.png" />
+    <None Include="Resources\bead-mail.png" />
+    <None Include="Resources\basement-key.png" />
+    <None Include="Resources\balmmushroom.png" />
+    <None Include="Resources\babiri-berry.png" />
+    <None Include="Resources\azure-flute.png" />
+    <None Include="Resources\awakening.png" />
+    <None Include="Resources\auroraticket.png" />
+    <None Include="Resources\aspear-berry.png" />
+    <None Include="Resources\armor-fossil.png" />
+    <None Include="Resources\apricorn-box.png" />
+    <None Include="Resources\apicot-berry.png" />
+    <None Include="Resources\antidote.png" />
+    <None Include="Resources\amulet-coin.png" />
+    <None Include="Resources\air-mail.png" />
+    <None Include="Resources\air-balloon.png" />
+    <None Include="Resources\aguav-berry.png" />
+    <None Include="Resources\adamant-orb.png" />
+    <None Include="Resources\acro-bike.png" />
+    <None Include="Resources\absorb-bulb.png" />
+    <None Include="Resources\ability-urge.png" />
+    <None Include="Resources\zoom-lens.png" />
+    <None Include="Resources\zinc.png" />
+    <None Include="Resources\zap-plate.png" />
+    <None Include="Resources\ylw-apricorn.png" />
+    <None Include="Resources\yellow-shard.png" />
+    <None Include="Resources\yellow-scarf.png" />
+    <None Include="Resources\yellow-flute.png" />
+    <None Include="Resources\yache-berry.png" />
+    <None Include="Resources\xtransceiver.png" />
+    <None Include="Resources\x-speed-6.png" />
+    <None Include="Resources\x-speed-3.png" />
+    <None Include="Resources\x-speed-2.png" />
+    <None Include="Resources\x-speed.png" />
+    <None Include="Resources\x-special-6.png" />
+    <None Include="Resources\x-special-3.png" />
+    <None Include="Resources\x-special-2.png" />
+    <None Include="Resources\x-special.png" />
+    <None Include="Resources\x-sp-def-6.png" />
+    <None Include="Resources\x-sp-def-3.png" />
+    <None Include="Resources\x-sp-def-2.png" />
+    <None Include="Resources\x-sp-def.png" />
+    <None Include="Resources\x-defend-6.png" />
+    <None Include="Resources\x-defend-3.png" />
+    <None Include="Resources\x-defend-2.png" />
+    <None Include="Resources\x-defend.png" />
+    <None Include="Resources\x-attack-6.png" />
+    <None Include="Resources\x-attack-3.png" />
+    <None Include="Resources\x-attack-2.png" />
+    <None Include="Resources\x-attack.png" />
+    <None Include="Resources\x-accuracy-6.png" />
+    <None Include="Resources\x-accuracy-3.png" />
+    <None Include="Resources\x-accuracy-2.png" />
+    <None Include="Resources\x-accuracy.png" />
+    <None Include="Resources\works-key.png" />
+    <None Include="Resources\wood-mail.png" />
+    <None Include="Resources\wise-glasses.png" />
+    <None Include="Resources\wiki-berry.png" />
+    <None Include="Resources\wide-lens.png" />
+    <None Include="Resources\wht-apricorn.png" />
+    <None Include="Resources\white-herb.png" />
+    <None Include="Resources\white-flute.png" />
+    <None Include="Resources\wepear-berry.png" />
+    <None Include="Resources\wave-mail.png" />
+    <None Include="Resources\wave-incense.png" />
+    <None Include="Resources\watmel-berry.png" />
+    <None Include="Resources\water-stone.png" />
+    <None Include="Resources\water-gem.png" />
+    <None Include="Resources\wailmer-pail.png" />
+    <None Include="Resources\wacan-berry.png" />
+    <None Include="Resources\vs-seeker.png" />
+    <None Include="Resources\vs-recorder.png" />
+    <None Include="Resources\up-grade.png" />
+    <None Include="Resources\unown-report.png" />
+    <None Include="Resources\ultra-ball.png" />
+    <None Include="Resources\twistedspoon.png" />
+    <None Include="Resources\tunnel-mail.png" />
+    <None Include="Resources\tropic-mail.png" />
+    <None Include="Resources\tri-pass.png" />
+    <None Include="Resources\toxic-plate.png" />
+    <None Include="Resources\toxic-orb.png" />
+    <None Include="Resources\town-map.png" />
+    <None Include="Resources\tm-water.png" />
+    <None Include="Resources\tm-steel.png" />
+    <None Include="Resources\tm-rock.png" />
+    <None Include="Resources\tm-psychic.png" />
+    <None Include="Resources\tm-poison.png" />
+    <None Include="Resources\tm-normal.png" />
+    <None Include="Resources\tm-ice.png" />
+    <None Include="Resources\tm-ground.png" />
+    <None Include="Resources\tm-grass.png" />
+    <None Include="Resources\tm-ghost.png" />
+    <None Include="Resources\tm-flying.png" />
+    <None Include="Resources\tm-fire.png" />
+    <None Include="Resources\tm-fighting.png" />
+    <None Include="Resources\tm-electric.png" />
+    <None Include="Resources\tm-dragon.png" />
+    <None Include="Resources\tm-dark.png" />
+    <None Include="Resources\tm-case.png" />
+    <None Include="Resources\tm-bug.png" />
+    <None Include="Resources\tinymushroom.png" />
+    <None Include="Resources\timer-ball.png" />
+    <None Include="Resources\tidal-bell.png" />
+    <None Include="Resources\thunderstone.png" />
+    <None Include="Resources\thick-club.png" />
+    <None Include="Resources\thanks-mail.png" />
+    <None Include="Resources\teachy-tv.png" />
+    <None Include="Resources\tea.png" />
+    <None Include="Resources\tanga-berry.png" />
+    <None Include="Resources\tamato-berry.png" />
+    <None Include="Resources\swift-wing.png" />
+    <None Include="Resources\sweet-heart.png" />
+    <None Include="Resources\super-rod.png" />
+    <None Include="Resources\super-repel.png" />
+    <None Include="Resources\super-potion.png" />
+    <None Include="Resources\sun-stone.png" />
+    <None Include="Resources\suite-key.png" />
+    <None Include="Resources\storage-key.png" />
+    <None Include="Resources\stone-plate.png" />
+    <None Include="Resources\sticky-barb.png" />
+    <None Include="Resources\stick.png" />
+    <None Include="Resources\steel-mail.png" />
+    <None Include="Resources\steel-gem.png" />
+    <None Include="Resources\star-piece.png" />
+    <None Include="Resources\starf-berry.png" />
+    <None Include="Resources\stardust.png" />
+    <None Include="Resources\stable-mulch.png" />
+    <None Include="Resources\ss-ticket.png" />
+    <None Include="Resources\squirtbottle.png" />
+    <None Include="Resources\sprayduck.png" />
+    <None Include="Resources\sport-ball.png" />
+    <None Include="Resources\spooky-plate.png" />
+    <None Include="Resources\splash-plate.png" />
+    <None Include="Resources\cat2.png" />
+    <None Include="Resources\cat1.png" />
+    <None Include="Resources\cat3.png" />
+    <None Include="Resources\type7.gif" />
+    <None Include="Resources\type6.gif" />
+    <None Include="Resources\type5.gif" />
+    <None Include="Resources\type4.gif" />
+    <None Include="Resources\type3.gif" />
+    <None Include="Resources\type2.gif" />
+    <None Include="Resources\type1.gif" />
+    <None Include="Resources\type17.gif" />
+    <None Include="Resources\type16.gif" />
+    <None Include="Resources\type15.gif" />
+    <None Include="Resources\type14.gif" />
+    <None Include="Resources\type13.gif" />
+    <None Include="Resources\type12.gif" />
+    <None Include="Resources\type11.gif" />
+    <None Include="Resources\type10.gif" />
+    <None Include="Resources\type9.gif" />
+    <None Include="Resources\type8.gif" />
+    <None Include="Resources\print_icon.gif" />
+    <None Include="Resources\open_icon.gif" />
+    <None Include="Resources\save_icon.gif" />
+    <None Include="Resources\new_icon.gif" />
+    <None Include="Resources\print.png" />
+    <None Include="Resources\new.png" />
+    <None Include="Resources\save.gif" />
+    <None Include="Resources\print.gif" />
+    <None Include="Resources\new.gif" />
+    <None Include="Resources\open.gif" />
+    <None Include="Resources\new.ico" />
+    <None Include="Resources\save.ico" />
+    <None Include="Resources\open.ico" />
+    <None Include="Resources\print.ico" />
+    <None Include="Resources\641-incarnate.png" />
+    <None Include="Resources\641.png" />
+    <None Include="Resources\640.png" />
+    <None Include="Resources\639.png" />
+    <None Include="Resources\638.png" />
+    <None Include="Resources\637.png" />
+    <None Include="Resources\636.png" />
+    <None Include="Resources\635.png" />
+    <None Include="Resources\634.png" />
+    <None Include="Resources\633.png" />
+    <None Include="Resources\632.png" />
+    <None Include="Resources\631.png" />
+    <None Include="Resources\630.png" />
+    <None Include="Resources\629.png" />
+    <None Include="Resources\628.png" />
+    <None Include="Resources\627.png" />
+    <None Include="Resources\626.png" />
+    <None Include="Resources\625.png" />
+    <None Include="Resources\624.png" />
+    <None Include="Resources\623.png" />
+    <None Include="Resources\622.png" />
+    <None Include="Resources\621.png" />
+    <None Include="Resources\620.png" />
+    <None Include="Resources\619.png" />
+    <None Include="Resources\618.png" />
+    <None Include="Resources\617.png" />
+    <None Include="Resources\616.png" />
+    <None Include="Resources\615.png" />
+    <None Include="Resources\614.png" />
+    <None Include="Resources\613.png" />
+    <None Include="Resources\612.png" />
+    <None Include="Resources\611.png" />
+    <None Include="Resources\610.png" />
+    <None Include="Resources\609.png" />
+    <None Include="Resources\608.png" />
+    <None Include="Resources\607.png" />
+    <None Include="Resources\606.png" />
+    <None Include="Resources\605.png" />
+    <None Include="Resources\604.png" />
+    <None Include="Resources\603.png" />
+    <None Include="Resources\602.png" />
+    <None Include="Resources\601.png" />
+    <None Include="Resources\600.png" />
+    <None Include="Resources\599.png" />
+    <None Include="Resources\598.png" />
+    <None Include="Resources\597.png" />
+    <None Include="Resources\596.png" />
+    <None Include="Resources\595.png" />
+    <None Include="Resources\594.png" />
+    <None Include="Resources\593.png" />
+    <None Include="Resources\592.png" />
+    <None Include="Resources\591.png" />
+    <None Include="Resources\590.png" />
+    <None Include="Resources\589.png" />
+    <None Include="Resources\588.png" />
+    <None Include="Resources\587.png" />
+    <None Include="Resources\586-winter.png" />
+    <None Include="Resources\586-summer.png" />
+    <None Include="Resources\586-spring.png" />
+    <None Include="Resources\586-autumn.png" />
+    <None Include="Resources\586.png" />
+    <None Include="Resources\585-winter.png" />
+    <None Include="Resources\585-summer.png" />
+    <None Include="Resources\585-spring.png" />
+    <None Include="Resources\585-autumn.png" />
+    <None Include="Resources\585.png" />
+    <None Include="Resources\584.png" />
+    <None Include="Resources\583.png" />
+    <None Include="Resources\582.png" />
+    <None Include="Resources\581.png" />
+    <None Include="Resources\580.png" />
+    <None Include="Resources\579.png" />
+    <None Include="Resources\578.png" />
+    <None Include="Resources\577.png" />
+    <None Include="Resources\576.png" />
+    <None Include="Resources\575.png" />
+    <None Include="Resources\574.png" />
+    <None Include="Resources\573.png" />
+    <None Include="Resources\572.png" />
+    <None Include="Resources\571.png" />
+    <None Include="Resources\570.png" />
+    <None Include="Resources\569.png" />
+    <None Include="Resources\568.png" />
+    <None Include="Resources\567.png" />
+    <None Include="Resources\566.png" />
+    <None Include="Resources\565.png" />
+    <None Include="Resources\564.png" />
+    <None Include="Resources\563.png" />
+    <None Include="Resources\562.png" />
+    <None Include="Resources\561.png" />
+    <None Include="Resources\560.png" />
+    <None Include="Resources\559.png" />
+    <None Include="Resources\558.png" />
+    <None Include="Resources\557.png" />
+    <None Include="Resources\556.png" />
+    <None Include="Resources\555-zen.png" />
+    <None Include="Resources\555-standard.png" />
+    <None Include="Resources\555.png" />
+    <None Include="Resources\554.png" />
+    <None Include="Resources\553.png" />
+    <None Include="Resources\552.png" />
+    <None Include="Resources\551.png" />
+    <None Include="Resources\550-red-striped.png" />
+    <None Include="Resources\550-blue-striped.png" />
+    <None Include="Resources\550.png" />
+    <None Include="Resources\549.png" />
+    <None Include="Resources\548.png" />
+    <None Include="Resources\547.png" />
+    <None Include="Resources\546.png" />
+    <None Include="Resources\545.png" />
+    <None Include="Resources\544.png" />
+    <None Include="Resources\543.png" />
+    <None Include="Resources\542.png" />
+    <None Include="Resources\541.png" />
+    <None Include="Resources\540.png" />
+    <None Include="Resources\539.png" />
+    <None Include="Resources\538.png" />
+    <None Include="Resources\537.png" />
+    <None Include="Resources\536.png" />
+    <None Include="Resources\535.png" />
+    <None Include="Resources\534.png" />
+    <None Include="Resources\533.png" />
+    <None Include="Resources\532.png" />
+    <None Include="Resources\531.png" />
+    <None Include="Resources\530.png" />
+    <None Include="Resources\529.png" />
+    <None Include="Resources\528.png" />
+    <None Include="Resources\527.png" />
+    <None Include="Resources\526.png" />
+    <None Include="Resources\525.png" />
+    <None Include="Resources\524.png" />
+    <None Include="Resources\523.png" />
+    <None Include="Resources\522.png" />
+    <None Include="Resources\521.png" />
+    <None Include="Resources\520.png" />
+    <None Include="Resources\519.png" />
+    <None Include="Resources\518.png" />
+    <None Include="Resources\517.png" />
+    <None Include="Resources\516.png" />
+    <None Include="Resources\515.png" />
+    <None Include="Resources\514.png" />
+    <None Include="Resources\513.png" />
+    <None Include="Resources\512.png" />
+    <None Include="Resources\511.png" />
+    <None Include="Resources\510.png" />
+    <None Include="Resources\509.png" />
+    <None Include="Resources\508.png" />
+    <None Include="Resources\507.png" />
+    <None Include="Resources\506.png" />
+    <None Include="Resources\505.png" />
+    <None Include="Resources\504.png" />
+    <None Include="Resources\503.png" />
+    <None Include="Resources\502.png" />
+    <None Include="Resources\501.png" />
+    <None Include="Resources\500.png" />
+    <None Include="Resources\499.png" />
+    <None Include="Resources\498.png" />
+    <None Include="Resources\497.png" />
+    <None Include="Resources\496.png" />
+    <None Include="Resources\495.png" />
+    <None Include="Resources\494.png" />
+    <None Include="Resources\493-water.png" />
+    <None Include="Resources\493-steel.png" />
+    <None Include="Resources\493-rock.png" />
+    <None Include="Resources\493-psychic.png" />
+    <None Include="Resources\493-poison.png" />
+    <None Include="Resources\493-normal.png" />
+    <None Include="Resources\493-ice.png" />
+    <None Include="Resources\493-ground.png" />
+    <None Include="Resources\493-grass.png" />
+    <None Include="Resources\493-ghost.png" />
+    <None Include="Resources\493-flying.png" />
+    <None Include="Resources\493-fire.png" />
+    <None Include="Resources\493-fighting.png" />
+    <None Include="Resources\493-electric.png" />
+    <None Include="Resources\493-dragon.png" />
+    <None Include="Resources\493-dark.png" />
+    <None Include="Resources\493-bug.png" />
+    <None Include="Resources\493.png" />
+    <None Include="Resources\492-sky.png" />
+    <None Include="Resources\492-land.png" />
+    <None Include="Resources\492.png" />
+    <None Include="Resources\491.png" />
+    <None Include="Resources\490.png" />
+    <None Include="Resources\489.png" />
+    <None Include="Resources\488.png" />
+    <None Include="Resources\487-origin.png" />
+    <None Include="Resources\487-altered.png" />
+    <None Include="Resources\487.png" />
+    <None Include="Resources\486.png" />
+    <None Include="Resources\485.png" />
+    <None Include="Resources\484.png" />
+    <None Include="Resources\483.png" />
+    <None Include="Resources\482.png" />
+    <None Include="Resources\481.png" />
+    <None Include="Resources\480.png" />
+    <None Include="Resources\479-wash.png" />
+    <None Include="Resources\479-mow.png" />
+    <None Include="Resources\479-heat.png" />
+    <None Include="Resources\479-frost.png" />
+    <None Include="Resources\479-fan.png" />
+    <None Include="Resources\479.png" />
+    <None Include="Resources\478.png" />
+    <None Include="Resources\477.png" />
+    <None Include="Resources\476.png" />
+    <None Include="Resources\475.png" />
+    <None Include="Resources\474.png" />
+    <None Include="Resources\473.png" />
+    <None Include="Resources\472.png" />
+    <None Include="Resources\471.png" />
+    <None Include="Resources\470.png" />
+    <None Include="Resources\469.png" />
+    <None Include="Resources\468.png" />
+    <None Include="Resources\467.png" />
+    <None Include="Resources\466.png" />
+    <None Include="Resources\465.png" />
+    <None Include="Resources\464.png" />
+    <None Include="Resources\463.png" />
+    <None Include="Resources\462.png" />
+    <None Include="Resources\461.png" />
+    <None Include="Resources\460.png" />
+    <None Include="Resources\459.png" />
+    <None Include="Resources\458.png" />
+    <None Include="Resources\457.png" />
+    <None Include="Resources\456.png" />
+    <None Include="Resources\455.png" />
+    <None Include="Resources\454.png" />
+    <None Include="Resources\453.png" />
+    <None Include="Resources\452.png" />
+    <None Include="Resources\451.png" />
+    <None Include="Resources\450.png" />
+    <None Include="Resources\449.png" />
+    <None Include="Resources\448.png" />
+    <None Include="Resources\447.png" />
+    <None Include="Resources\446.png" />
+    <None Include="Resources\445.png" />
+    <None Include="Resources\444.png" />
+    <None Include="Resources\443.png" />
+    <None Include="Resources\442.png" />
+    <None Include="Resources\441.png" />
+    <None Include="Resources\440.png" />
+    <None Include="Resources\439.png" />
+    <None Include="Resources\438.png" />
+    <None Include="Resources\437.png" />
+    <None Include="Resources\436.png" />
+    <None Include="Resources\435.png" />
+    <None Include="Resources\434.png" />
+    <None Include="Resources\433.png" />
+    <None Include="Resources\432.png" />
+    <None Include="Resources\431.png" />
+    <None Include="Resources\430.png" />
+    <None Include="Resources\429.png" />
+    <None Include="Resources\428.png" />
+    <None Include="Resources\427.png" />
+    <None Include="Resources\426.png" />
+    <None Include="Resources\425.png" />
+    <None Include="Resources\424.png" />
+    <None Include="Resources\423-west.png" />
+    <None Include="Resources\423-east.png" />
+    <None Include="Resources\423.png" />
+    <None Include="Resources\422-west.png" />
+    <None Include="Resources\422-east.png" />
+    <None Include="Resources\422.png" />
+    <None Include="Resources\421-sunshine.png" />
+    <None Include="Resources\421-overcast.png" />
+    <None Include="Resources\421.png" />
+    <None Include="Resources\420.png" />
+    <None Include="Resources\419.png" />
+    <None Include="Resources\418.png" />
+    <None Include="Resources\417.png" />
+    <None Include="Resources\416.png" />
+    <None Include="Resources\415.png" />
+    <None Include="Resources\414.png" />
+    <None Include="Resources\413-trash.png" />
+    <None Include="Resources\413-sandy.png" />
+    <None Include="Resources\413-plant.png" />
+    <None Include="Resources\413.png" />
+    <None Include="Resources\412-trash.png" />
+    <None Include="Resources\412-sandy.png" />
+    <None Include="Resources\412-plant.png" />
+    <None Include="Resources\412.png" />
+    <None Include="Resources\411.png" />
+    <None Include="Resources\410.png" />
+    <None Include="Resources\409.png" />
+    <None Include="Resources\408.png" />
+    <None Include="Resources\407.png" />
+    <None Include="Resources\406.png" />
+    <None Include="Resources\405.png" />
+    <None Include="Resources\404.png" />
+    <None Include="Resources\403.png" />
+    <None Include="Resources\402.png" />
+    <None Include="Resources\401.png" />
+    <None Include="Resources\400.png" />
+    <None Include="Resources\399.png" />
+    <None Include="Resources\398.png" />
+    <None Include="Resources\397.png" />
+    <None Include="Resources\396.png" />
+    <None Include="Resources\395.png" />
+    <None Include="Resources\394.png" />
+    <None Include="Resources\393.png" />
+    <None Include="Resources\392.png" />
+    <None Include="Resources\391.png" />
+    <None Include="Resources\390.png" />
+    <None Include="Resources\389.png" />
+    <None Include="Resources\388.png" />
+    <None Include="Resources\387.png" />
+    <None Include="Resources\386-speed.png" />
+    <None Include="Resources\386-normal.png" />
+    <None Include="Resources\386-defense.png" />
+    <None Include="Resources\386-attack.png" />
+    <None Include="Resources\386.png" />
+    <None Include="Resources\385.png" />
+    <None Include="Resources\384.png" />
+    <None Include="Resources\383.png" />
+    <None Include="Resources\382.png" />
+    <None Include="Resources\381.png" />
+    <None Include="Resources\380.png" />
+    <None Include="Resources\379.png" />
+    <None Include="Resources\378.png" />
+    <None Include="Resources\377.png" />
+    <None Include="Resources\376.png" />
+    <None Include="Resources\375.png" />
+    <None Include="Resources\374.png" />
+    <None Include="Resources\373.png" />
+    <None Include="Resources\372.png" />
+    <None Include="Resources\371.png" />
+    <None Include="Resources\370.png" />
+    <None Include="Resources\369.png" />
+    <None Include="Resources\368.png" />
+    <None Include="Resources\367.png" />
+    <None Include="Resources\366.png" />
+    <None Include="Resources\365.png" />
+    <None Include="Resources\364.png" />
+    <None Include="Resources\363.png" />
+    <None Include="Resources\362.png" />
+    <None Include="Resources\361.png" />
+    <None Include="Resources\360.png" />
+    <None Include="Resources\359.png" />
+    <None Include="Resources\358.png" />
+    <None Include="Resources\357.png" />
+    <None Include="Resources\356.png" />
+    <None Include="Resources\355.png" />
+    <None Include="Resources\354.png" />
+    <None Include="Resources\353.png" />
+    <None Include="Resources\352.png" />
+    <None Include="Resources\351-sunny.png" />
+    <None Include="Resources\351-snowy.png" />
+    <None Include="Resources\351-rainy.png" />
+    <None Include="Resources\351.png" />
+    <None Include="Resources\350.png" />
+    <None Include="Resources\349.png" />
+    <None Include="Resources\348.png" />
+    <None Include="Resources\347.png" />
+    <None Include="Resources\346.png" />
+    <None Include="Resources\345.png" />
+    <None Include="Resources\344.png" />
+    <None Include="Resources\343.png" />
+    <None Include="Resources\342.png" />
+    <None Include="Resources\341.png" />
+    <None Include="Resources\340.png" />
+    <None Include="Resources\339.png" />
+    <None Include="Resources\338.png" />
+    <None Include="Resources\337.png" />
+    <None Include="Resources\336.png" />
+    <None Include="Resources\335.png" />
+    <None Include="Resources\334.png" />
+    <None Include="Resources\333.png" />
+    <None Include="Resources\332.png" />
+    <None Include="Resources\331.png" />
+    <None Include="Resources\330.png" />
+    <None Include="Resources\329.png" />
+    <None Include="Resources\328.png" />
+    <None Include="Resources\327.png" />
+    <None Include="Resources\326.png" />
+    <None Include="Resources\325.png" />
+    <None Include="Resources\324.png" />
+    <None Include="Resources\323.png" />
+    <None Include="Resources\322.png" />
+    <None Include="Resources\321.png" />
+    <None Include="Resources\320.png" />
+    <None Include="Resources\319.png" />
+    <None Include="Resources\318.png" />
+    <None Include="Resources\317.png" />
+    <None Include="Resources\316.png" />
+    <None Include="Resources\315.png" />
+    <None Include="Resources\314.png" />
+    <None Include="Resources\313.png" />
+    <None Include="Resources\312.png" />
+    <None Include="Resources\311.png" />
+    <None Include="Resources\310.png" />
+    <None Include="Resources\309.png" />
+    <None Include="Resources\308.png" />
+    <None Include="Resources\307.png" />
+    <None Include="Resources\306.png" />
+    <None Include="Resources\305.png" />
+    <None Include="Resources\304.png" />
+    <None Include="Resources\303.png" />
+    <None Include="Resources\302.png" />
+    <None Include="Resources\301.png" />
+    <None Include="Resources\300.png" />
+    <None Include="Resources\299.png" />
+    <None Include="Resources\298.png" />
+    <None Include="Resources\297.png" />
+    <None Include="Resources\296.png" />
+    <None Include="Resources\295.png" />
+    <None Include="Resources\294.png" />
+    <None Include="Resources\293.png" />
+    <None Include="Resources\292.png" />
+    <None Include="Resources\291.png" />
+    <None Include="Resources\290.png" />
+    <None Include="Resources\289.png" />
+    <None Include="Resources\288.png" />
+    <None Include="Resources\287.png" />
+    <None Include="Resources\286.png" />
+    <None Include="Resources\285.png" />
+    <None Include="Resources\284.png" />
+    <None Include="Resources\283.png" />
+    <None Include="Resources\282.png" />
+    <None Include="Resources\281.png" />
+    <None Include="Resources\280.png" />
+    <None Include="Resources\279.png" />
+    <None Include="Resources\278.png" />
+    <None Include="Resources\277.png" />
+    <None Include="Resources\276.png" />
+    <None Include="Resources\275.png" />
+    <None Include="Resources\274.png" />
+    <None Include="Resources\273.png" />
+    <None Include="Resources\272.png" />
+    <None Include="Resources\271.png" />
+    <None Include="Resources\270.png" />
+    <None Include="Resources\269.png" />
+    <None Include="Resources\268.png" />
+    <None Include="Resources\267.png" />
+    <None Include="Resources\266.png" />
+    <None Include="Resources\265.png" />
+    <None Include="Resources\264.png" />
+    <None Include="Resources\263.png" />
+    <None Include="Resources\262.png" />
+    <None Include="Resources\261.png" />
+    <None Include="Resources\260.png" />
+    <None Include="Resources\259.png" />
+    <None Include="Resources\258.png" />
+    <None Include="Resources\257.png" />
+    <None Include="Resources\256.png" />
+    <None Include="Resources\255.png" />
+    <None Include="Resources\254.png" />
+    <None Include="Resources\253.png" />
+    <None Include="Resources\252.png" />
+    <None Include="Resources\251.png" />
+    <None Include="Resources\250.png" />
+    <None Include="Resources\249.png" />
+    <None Include="Resources\248.png" />
+    <None Include="Resources\247.png" />
+    <None Include="Resources\246.png" />
+    <None Include="Resources\245.png" />
+    <None Include="Resources\244.png" />
+    <None Include="Resources\243.png" />
+    <None Include="Resources\242.png" />
+    <None Include="Resources\241.png" />
+    <None Include="Resources\240.png" />
+    <None Include="Resources\239.png" />
+    <None Include="Resources\238.png" />
+    <None Include="Resources\237.png" />
+    <None Include="Resources\236.png" />
+    <None Include="Resources\235.png" />
+    <None Include="Resources\234.png" />
+    <None Include="Resources\233.png" />
+    <None Include="Resources\232.png" />
+    <None Include="Resources\231.png" />
+    <None Include="Resources\230.png" />
+    <None Include="Resources\229.png" />
+    <None Include="Resources\228.png" />
+    <None Include="Resources\227.png" />
+    <None Include="Resources\226.png" />
+    <None Include="Resources\225.png" />
+    <None Include="Resources\224.png" />
+    <None Include="Resources\223.png" />
+    <None Include="Resources\222.png" />
+    <None Include="Resources\221.png" />
+    <None Include="Resources\220.png" />
+    <None Include="Resources\219.png" />
+    <None Include="Resources\218.png" />
+    <None Include="Resources\217.png" />
+    <None Include="Resources\216.png" />
+    <None Include="Resources\215.png" />
+    <None Include="Resources\214.png" />
+    <None Include="Resources\213.png" />
+    <None Include="Resources\212.png" />
+    <None Include="Resources\211.png" />
+    <None Include="Resources\210.png" />
+    <None Include="Resources\209.png" />
+    <None Include="Resources\208.png" />
+    <None Include="Resources\207.png" />
+    <None Include="Resources\206.png" />
+    <None Include="Resources\205.png" />
+    <None Include="Resources\204.png" />
+    <None Include="Resources\203.png" />
+    <None Include="Resources\202.png" />
+    <None Include="Resources\201-z.png" />
+    <None Include="Resources\201-y.png" />
+    <None Include="Resources\201-x.png" />
+    <None Include="Resources\201-w.png" />
+    <None Include="Resources\201-v.png" />
+    <None Include="Resources\201-u.png" />
+    <None Include="Resources\201-t.png" />
+    <None Include="Resources\201-s.png" />
+    <None Include="Resources\201-r.png" />
+    <None Include="Resources\201-question.png" />
+    <None Include="Resources\201-q.png" />
+    <None Include="Resources\201-p.png" />
+    <None Include="Resources\201-o.png" />
+    <None Include="Resources\201-n.png" />
+    <None Include="Resources\201-m.png" />
+    <None Include="Resources\201-l.png" />
+    <None Include="Resources\201-k.png" />
+    <None Include="Resources\201-j.png" />
+    <None Include="Resources\201-i.png" />
+    <None Include="Resources\201-h.png" />
+    <None Include="Resources\201-g.png" />
+    <None Include="Resources\201-f.png" />
+    <None Include="Resources\201-exclamation.png" />
+    <None Include="Resources\201-e.png" />
+    <None Include="Resources\201-d.png" />
+    <None Include="Resources\201-c.png" />
+    <None Include="Resources\201-b.png" />
+    <None Include="Resources\201-a.png" />
+    <None Include="Resources\201.png" />
+    <None Include="Resources\200.png" />
+    <None Include="Resources\199.png" />
+    <None Include="Resources\198.png" />
+    <None Include="Resources\197.png" />
+    <None Include="Resources\196.png" />
+    <None Include="Resources\195.png" />
+    <None Include="Resources\194.png" />
+    <None Include="Resources\193.png" />
+    <None Include="Resources\192.png" />
+    <None Include="Resources\191.png" />
+    <None Include="Resources\190.png" />
+    <None Include="Resources\189.png" />
+    <None Include="Resources\188.png" />
+    <None Include="Resources\187.png" />
+    <None Include="Resources\186.png" />
+    <None Include="Resources\185.png" />
+    <None Include="Resources\184.png" />
+    <None Include="Resources\183.png" />
+    <None Include="Resources\182.png" />
+    <None Include="Resources\181.png" />
+    <None Include="Resources\180.png" />
+    <None Include="Resources\179.png" />
+    <None Include="Resources\178.png" />
+    <None Include="Resources\177.png" />
+    <None Include="Resources\176.png" />
+    <None Include="Resources\175.png" />
+    <None Include="Resources\174.png" />
+    <None Include="Resources\173.png" />
+    <None Include="Resources\172.png" />
+    <None Include="Resources\171.png" />
+    <None Include="Resources\170.png" />
+    <None Include="Resources\169.png" />
+    <None Include="Resources\168.png" />
+    <None Include="Resources\167.png" />
+    <None Include="Resources\166.png" />
+    <None Include="Resources\165.png" />
+    <None Include="Resources\164.png" />
+    <None Include="Resources\163.png" />
+    <None Include="Resources\162.png" />
+    <None Include="Resources\161.png" />
+    <None Include="Resources\160.png" />
+    <None Include="Resources\159.png" />
+    <None Include="Resources\158.png" />
+    <None Include="Resources\157.png" />
+    <None Include="Resources\156.png" />
+    <None Include="Resources\155.png" />
+    <None Include="Resources\154.png" />
+    <None Include="Resources\153.png" />
+    <None Include="Resources\152.png" />
+    <None Include="Resources\151.png" />
+    <None Include="Resources\150.png" />
+    <None Include="Resources\149.png" />
+    <None Include="Resources\148.png" />
+    <None Include="Resources\147.png" />
+    <None Include="Resources\146.png" />
+    <None Include="Resources\145.png" />
+    <None Include="Resources\144.png" />
+    <None Include="Resources\143.png" />
+    <None Include="Resources\142.png" />
+    <None Include="Resources\141.png" />
+    <None Include="Resources\140.png" />
+    <None Include="Resources\139.png" />
+    <None Include="Resources\138.png" />
+    <None Include="Resources\137.png" />
+    <None Include="Resources\136.png" />
+    <None Include="Resources\135.png" />
+    <None Include="Resources\134.png" />
+    <None Include="Resources\133.png" />
+    <None Include="Resources\132.png" />
+    <None Include="Resources\131.png" />
+    <None Include="Resources\130.png" />
+    <None Include="Resources\129.png" />
+    <None Include="Resources\128.png" />
+    <None Include="Resources\127.png" />
+    <None Include="Resources\126.png" />
+    <None Include="Resources\125.png" />
+    <None Include="Resources\124.png" />
+    <None Include="Resources\123.png" />
+    <None Include="Resources\122.png" />
+    <None Include="Resources\121.png" />
+    <None Include="Resources\120.png" />
+    <None Include="Resources\119.png" />
+    <None Include="Resources\118.png" />
+    <None Include="Resources\117.png" />
+    <None Include="Resources\116.png" />
+    <None Include="Resources\115.png" />
+    <None Include="Resources\114.png" />
+    <None Include="Resources\113.png" />
+    <None Include="Resources\112.png" />
+    <None Include="Resources\111.png" />
+    <None Include="Resources\110.png" />
+    <None Include="Resources\109.png" />
+    <None Include="Resources\108.png" />
+    <None Include="Resources\107.png" />
+    <None Include="Resources\106.png" />
+    <None Include="Resources\105.png" />
+    <None Include="Resources\104.png" />
+    <None Include="Resources\103.png" />
+    <None Include="Resources\102.png" />
+    <None Include="Resources\101.png" />
+    <None Include="Resources\100.png" />
+    <None Include="Resources\99.png" />
+    <None Include="Resources\98.png" />
+    <None Include="Resources\97.png" />
+    <None Include="Resources\96.png" />
+    <None Include="Resources\95.png" />
+    <None Include="Resources\94.png" />
+    <None Include="Resources\93.png" />
+    <None Include="Resources\92.png" />
+    <None Include="Resources\91.png" />
+    <None Include="Resources\90.png" />
+    <None Include="Resources\89.png" />
+    <None Include="Resources\88.png" />
+    <None Include="Resources\87.png" />
+    <None Include="Resources\86.png" />
+    <None Include="Resources\85.png" />
+    <None Include="Resources\84.png" />
+    <None Include="Resources\83.png" />
+    <None Include="Resources\82.png" />
+    <None Include="Resources\81.png" />
+    <None Include="Resources\80.png" />
+    <None Include="Resources\79.png" />
+    <None Include="Resources\78.png" />
+    <None Include="Resources\77.png" />
+    <None Include="Resources\76.png" />
+    <None Include="Resources\75.png" />
+    <None Include="Resources\74.png" />
+    <None Include="Resources\73.png" />
+    <None Include="Resources\72.png" />
+    <None Include="Resources\71.png" />
+    <None Include="Resources\70.png" />
+    <None Include="Resources\69.png" />
+    <None Include="Resources\68.png" />
+    <None Include="Resources\67.png" />
+    <None Include="Resources\66.png" />
+    <None Include="Resources\65.png" />
+    <None Include="Resources\64.png" />
+    <None Include="Resources\63.png" />
+    <None Include="Resources\62.png" />
+    <None Include="Resources\61.png" />
+    <None Include="Resources\60.png" />
+    <None Include="Resources\59.png" />
+    <None Include="Resources\58.png" />
+    <None Include="Resources\57.png" />
+    <None Include="Resources\56.png" />
+    <None Include="Resources\55.png" />
+    <None Include="Resources\54.png" />
+    <None Include="Resources\53.png" />
+    <None Include="Resources\52.png" />
+    <None Include="Resources\51.png" />
+    <None Include="Resources\50.png" />
+    <None Include="Resources\49.png" />
+    <None Include="Resources\48.png" />
+    <None Include="Resources\47.png" />
+    <None Include="Resources\46.png" />
+    <None Include="Resources\45.png" />
+    <None Include="Resources\44.png" />
+    <None Include="Resources\43.png" />
+    <None Include="Resources\42.png" />
+    <None Include="Resources\41.png" />
+    <None Include="Resources\40.png" />
+    <None Include="Resources\39.png" />
+    <None Include="Resources\38.png" />
+    <None Include="Resources\37.png" />
+    <None Include="Resources\36.png" />
+    <None Include="Resources\35.png" />
+    <None Include="Resources\34.png" />
+    <None Include="Resources\33.png" />
+    <None Include="Resources\32.png" />
+    <None Include="Resources\31.png" />
+    <None Include="Resources\30.png" />
+    <None Include="Resources\29.png" />
+    <None Include="Resources\28.png" />
+    <None Include="Resources\27.png" />
+    <None Include="Resources\26.png" />
+    <None Include="Resources\25.png" />
+    <None Include="Resources\24.png" />
+    <None Include="Resources\23.png" />
+    <None Include="Resources\22.png" />
+    <None Include="Resources\21.png" />
+    <None Include="Resources\20.png" />
+    <None Include="Resources\19.png" />
+    <None Include="Resources\18.png" />
+    <None Include="Resources\17.png" />
+    <None Include="Resources\16.png" />
+    <None Include="Resources\15.png" />
+    <None Include="Resources\14.png" />
+    <None Include="Resources\13.png" />
+    <None Include="Resources\12.png" />
+    <None Include="Resources\11.png" />
+    <None Include="Resources\10.png" />
+    <None Include="Resources\9.png" />
+    <None Include="Resources\8.png" />
+    <None Include="Resources\7.png" />
+    <None Include="Resources\6.png" />
+    <None Include="Resources\5.png" />
+    <None Include="Resources\4.png" />
+    <None Include="Resources\3.png" />
+    <None Include="Resources\2.png" />
+    <None Include="Resources\1.png" />
+    <None Include="Resources\0.png" />
+    <None Include="Resources\substitute.png" />
+    <None Include="Resources\egg-manaphy.png" />
+    <None Include="Resources\egg.png" />
+    <None Include="Resources\649-shock.png" />
+    <None Include="Resources\649-douse.png" />
+    <None Include="Resources\649-chill.png" />
+    <None Include="Resources\649-burn.png" />
+    <None Include="Resources\649.png" />
+    <None Include="Resources\648-pirouette.png" />
+    <None Include="Resources\648-aria.png" />
+    <None Include="Resources\648.png" />
+    <None Include="Resources\647-resolute.png" />
+    <None Include="Resources\647-ordinary.png" />
+    <None Include="Resources\647.png" />
+    <None Include="Resources\646-white.png" />
+    <None Include="Resources\646-black.png" />
+    <None Include="Resources\646.png" />
+    <None Include="Resources\645-therian.png" />
+    <None Include="Resources\645-incarnate.png" />
+    <None Include="Resources\645.png" />
+    <None Include="Resources\644.png" />
+    <None Include="Resources\643.png" />
+    <None Include="Resources\642-therian.png" />
+    <None Include="Resources\642-incarnate.png" />
+    <None Include="Resources\642.png" />
+    <None Include="Resources\641-therian.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SQL.Server.Compact.3.5">
+      <Visible>False</Visible>
+      <ProductName>SQL Server Compact 3.5 SP2</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
