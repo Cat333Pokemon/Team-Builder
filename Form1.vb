@@ -28,7 +28,7 @@ Public Class Form1
     End Enum
 
     Private Sub AboutToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AboutToolStripMenuItem.Click
-        MsgBox(AppName & ", v" & Me.ProductVersion & vbCrLf & vbCrLf & _
+        MsgBox(AppName & ", v" & Me.ProductVersion.Substring(0, Me.ProductVersion.IndexOf(".", Me.ProductVersion.IndexOf(".", 0) + 1)) & vbCrLf & vbCrLf & _
                "Created by Cat333Pokémon for Victory Road." & vbCrLf & vbCrLf & _
                "This product uses data by the free veekun project.", _
                 MsgBoxStyle.Information)
@@ -673,14 +673,21 @@ Public Class Form1
         'Calculate Hidden Power
         If Val(pkm1_hp.Text) = 0 Then
             pkm1_hiddenpower.Image = Nothing
+            pkm1_hiddenpower_base.Text = ""
         Else
             Dim HiddenPower As Double = _
                 (((pkm1_iv1.Value Mod 2) + 2 * (pkm1_iv2.Value Mod 2) + _
                  4 * (pkm1_iv3.Value Mod 2) + 8 * (pkm1_iv6.Value Mod 2) + _
                  16 * (pkm1_iv4.Value Mod 2) + 32 * (pkm1_iv5.Value Mod 2)) * _
                  15) / 63.0
+            Dim HiddenPowerBase As Double = _
+                ((Math.Floor((pkm1_iv1.Value Mod 4) / 2) + 2 * Math.Floor((pkm1_iv2.Value Mod 4) / 2) + _
+                 4 * Math.Floor((pkm1_iv3.Value Mod 4) / 2) + 8 * Math.Floor((pkm1_iv6.Value Mod 4) / 2) + _
+                 16 * Math.Floor((pkm1_iv4.Value Mod 4) / 2) + 32 * Math.Floor((pkm1_iv5.Value Mod 4) / 2)) * _
+                 40) / 63.0 + 30
 
             pkm1_hiddenpower.Image = My.Resources.ResourceManager.GetObject("type" & (Math.Floor(HiddenPower) + 2))
+            pkm1_hiddenpower_base.Text = Math.Floor(HiddenPowerBase)
         End If
 
     End Sub
@@ -1040,14 +1047,21 @@ Public Class Form1
         'Calculate Hidden Power
         If Val(pkm2_hp.Text) = 0 Then
             pkm2_hiddenpower.Image = Nothing
+            pkm2_hiddenpower_base.Text = ""
         Else
             Dim HiddenPower As Double = _
                 (((pkm2_iv1.Value Mod 2) + 2 * (pkm2_iv2.Value Mod 2) + _
                  4 * (pkm2_iv3.Value Mod 2) + 8 * (pkm2_iv6.Value Mod 2) + _
                  16 * (pkm2_iv4.Value Mod 2) + 32 * (pkm2_iv5.Value Mod 2)) * _
                  15) / 63.0
+            Dim HiddenPowerBase As Double = _
+                ((Math.Floor((pkm2_iv1.Value Mod 4) / 2) + 2 * Math.Floor((pkm2_iv2.Value Mod 4) / 2) + _
+                 4 * Math.Floor((pkm2_iv3.Value Mod 4) / 2) + 8 * Math.Floor((pkm2_iv6.Value Mod 4) / 2) + _
+                 16 * Math.Floor((pkm2_iv4.Value Mod 4) / 2) + 32 * Math.Floor((pkm2_iv5.Value Mod 4) / 2)) * _
+                 40) / 63.0 + 30
 
             pkm2_hiddenpower.Image = My.Resources.ResourceManager.GetObject("type" & (Math.Floor(HiddenPower) + 2))
+            pkm2_hiddenpower_base.Text = Math.Floor(HiddenPowerBase)
         End If
 
     End Sub
@@ -1407,14 +1421,21 @@ Public Class Form1
         'Calculate Hidden Power
         If Val(pkm3_hp.Text) = 0 Then
             pkm3_hiddenpower.Image = Nothing
+            pkm3_hiddenpower_base.Text = ""
         Else
             Dim HiddenPower As Double = _
                 (((pkm3_iv1.Value Mod 2) + 2 * (pkm3_iv2.Value Mod 2) + _
                  4 * (pkm3_iv3.Value Mod 2) + 8 * (pkm3_iv6.Value Mod 2) + _
                  16 * (pkm3_iv4.Value Mod 2) + 32 * (pkm3_iv5.Value Mod 2)) * _
                  15) / 63.0
+            Dim HiddenPowerBase As Double = _
+                ((Math.Floor((pkm3_iv1.Value Mod 4) / 2) + 2 * Math.Floor((pkm3_iv2.Value Mod 4) / 2) + _
+                 4 * Math.Floor((pkm3_iv3.Value Mod 4) / 2) + 8 * Math.Floor((pkm3_iv6.Value Mod 4) / 2) + _
+                 16 * Math.Floor((pkm3_iv4.Value Mod 4) / 2) + 32 * Math.Floor((pkm3_iv5.Value Mod 4) / 2)) * _
+                 40) / 63.0 + 30
 
             pkm3_hiddenpower.Image = My.Resources.ResourceManager.GetObject("type" & (Math.Floor(HiddenPower) + 2))
+            pkm3_hiddenpower_base.Text = Math.Floor(HiddenPowerBase)
         End If
 
     End Sub
@@ -1774,14 +1795,21 @@ Public Class Form1
         'Calculate Hidden Power
         If Val(pkm4_hp.Text) = 0 Then
             pkm4_hiddenpower.Image = Nothing
+            pkm4_hiddenpower_base.Text = ""
         Else
             Dim HiddenPower As Double = _
                 (((pkm4_iv1.Value Mod 2) + 2 * (pkm4_iv2.Value Mod 2) + _
                  4 * (pkm4_iv3.Value Mod 2) + 8 * (pkm4_iv6.Value Mod 2) + _
                  16 * (pkm4_iv4.Value Mod 2) + 32 * (pkm4_iv5.Value Mod 2)) * _
                  15) / 63.0
+            Dim HiddenPowerBase As Double = _
+                ((Math.Floor((pkm4_iv1.Value Mod 4) / 2) + 2 * Math.Floor((pkm4_iv2.Value Mod 4) / 2) + _
+                 4 * Math.Floor((pkm4_iv3.Value Mod 4) / 2) + 8 * Math.Floor((pkm4_iv6.Value Mod 4) / 2) + _
+                 16 * Math.Floor((pkm4_iv4.Value Mod 4) / 2) + 32 * Math.Floor((pkm4_iv5.Value Mod 4) / 2)) * _
+                 40) / 63.0 + 30
 
             pkm4_hiddenpower.Image = My.Resources.ResourceManager.GetObject("type" & (Math.Floor(HiddenPower) + 2))
+            pkm4_hiddenpower_base.Text = Math.Floor(HiddenPowerBase)
         End If
 
     End Sub
@@ -2141,14 +2169,21 @@ Public Class Form1
         'Calculate Hidden Power
         If Val(pkm5_hp.Text) = 0 Then
             pkm5_hiddenpower.Image = Nothing
+            pkm5_hiddenpower_base.Text = ""
         Else
             Dim HiddenPower As Double = _
                 (((pkm5_iv1.Value Mod 2) + 2 * (pkm5_iv2.Value Mod 2) + _
                  4 * (pkm5_iv3.Value Mod 2) + 8 * (pkm5_iv6.Value Mod 2) + _
                  16 * (pkm5_iv4.Value Mod 2) + 32 * (pkm5_iv5.Value Mod 2)) * _
                  15) / 63.0
+            Dim HiddenPowerBase As Double = _
+                ((Math.Floor((pkm5_iv1.Value Mod 4) / 2) + 2 * Math.Floor((pkm5_iv2.Value Mod 4) / 2) + _
+                 4 * Math.Floor((pkm5_iv3.Value Mod 4) / 2) + 8 * Math.Floor((pkm5_iv6.Value Mod 4) / 2) + _
+                 16 * Math.Floor((pkm5_iv4.Value Mod 4) / 2) + 32 * Math.Floor((pkm5_iv5.Value Mod 4) / 2)) * _
+                 40) / 63.0 + 30
 
             pkm5_hiddenpower.Image = My.Resources.ResourceManager.GetObject("type" & (Math.Floor(HiddenPower) + 2))
+            pkm5_hiddenpower_base.Text = Math.Floor(HiddenPowerBase)
         End If
 
     End Sub
@@ -2508,14 +2543,21 @@ Public Class Form1
         'Calculate Hidden Power
         If Val(pkm6_hp.Text) = 0 Then
             pkm6_hiddenpower.Image = Nothing
+            pkm6_hiddenpower_base.Text = ""
         Else
             Dim HiddenPower As Double = _
                 (((pkm6_iv1.Value Mod 2) + 2 * (pkm6_iv2.Value Mod 2) + _
                  4 * (pkm6_iv3.Value Mod 2) + 8 * (pkm6_iv6.Value Mod 2) + _
                  16 * (pkm6_iv4.Value Mod 2) + 32 * (pkm6_iv5.Value Mod 2)) * _
                  15) / 63.0
+            Dim HiddenPowerBase As Double = _
+                ((Math.Floor((pkm6_iv1.Value Mod 4) / 2) + 2 * Math.Floor((pkm6_iv2.Value Mod 4) / 2) + _
+                 4 * Math.Floor((pkm6_iv3.Value Mod 4) / 2) + 8 * Math.Floor((pkm6_iv6.Value Mod 4) / 2) + _
+                 16 * Math.Floor((pkm6_iv4.Value Mod 4) / 2) + 32 * Math.Floor((pkm6_iv5.Value Mod 4) / 2)) * _
+                 40) / 63.0 + 30
 
             pkm6_hiddenpower.Image = My.Resources.ResourceManager.GetObject("type" & (Math.Floor(HiddenPower) + 2))
+            pkm6_hiddenpower_base.Text = Math.Floor(HiddenPowerBase)
         End If
 
     End Sub

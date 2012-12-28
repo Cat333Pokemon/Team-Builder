@@ -1,0 +1,360 @@
+id,name,identifier,category,cost,item_id
+1,Absorb Bulb,absorb-bulb,12,200,588
+2,Adamant Orb,adamant-orb,18,10000,112
+3,Aguav Berry,aguav-berry,6,20,139
+4,Air Balloon,air-balloon,12,200,584
+5,Amulet Coin,amulet-coin,16,100,200
+6,Antidote,antidote,30,100,18
+7,Apicot Berry,apicot-berry,5,20,182
+8,Armor Fossil,armor-fossil,35,1000,104
+9,Aspear Berry,aspear-berry,3,20,130
+10,Awakening,awakening,30,250,21
+11,Babiri Berry,babiri-berry,7,20,176
+12,BalmMushroom,balmmushroom,24,0,621
+13,Belue Berry,belue-berry,8,20,160
+14,Berry Juice,berry-juice,27,100,43
+15,Big Mushroom,big-mushroom,24,5000,87
+16,Big Nugget,big-nugget,24,0,622
+17,Big Pearl,big-pearl,24,7500,89
+18,Big Root,big-root,12,200,273
+19,Binding Band,binding-band,12,200,587
+20,Black Belt,black-belt,19,100,218
+21,Black Flute,black-flute,11,400,68
+22,Black Sludge,black-sludge,12,200,258
+23,BlackGlasses,blackglasses,19,100,217
+24,Blue Flute,blue-flute,38,100,65
+25,Blue Scarf,blue-scarf,36,100,238
+26,Blue Shard,blue-shard,9,200,73
+27,Bluk Berry,bluk-berry,8,20,142
+28,BrightPowder,brightpowder,12,10,190
+29,Bug Gem,bug-gem,42,200,601
+30,Burn Drive,burn-drive,18,1000,565
+31,Burn Heal,burn-heal,30,250,19
+32,Calcium,calcium,26,9800,49
+33,Carbos,carbos,26,9800,48
+34,Casteliacone,casteliacone,30,100,632
+35,Cell Battery,cell-battery,12,200,589
+36,Charcoal,charcoal,19,9800,226
+37,Charti Berry,charti-berry,7,20,172
+38,Cheri Berry,cheri-berry,3,20,126
+39,Cherish Ball,cherish-ball,33,200,16
+40,Chesto Berry,chesto-berry,3,20,127
+41,Chilan Berry,chilan-berry,7,20,177
+42,Chill Drive,chill-drive,18,1000,566
+43,Choice Band,choice-band,13,100,197
+44,Choice Scarf,choice-scarf,13,200,264
+45,Choice Specs,choice-specs,13,200,274
+46,Chople Berry,chople-berry,7,20,166
+47,Claw Fossil,claw-fossil,35,1000,100
+48,Cleanse Tag,cleanse-tag,16,200,201
+49,Clever Wing,clever-wing,26,3000,610
+50,Coba Berry,coba-berry,7,20,169
+51,Colbur Berry,colbur-berry,7,20,175
+52,Comet Shard,comet-shard,24,0,624
+53,Cornn Berry,cornn-berry,8,20,152
+54,Cover Fossil,cover-fossil,35,1000,613
+55,Custap Berry,custap-berry,5,20,187
+56,Damp Mulch,damp-mulch,32,200,96
+57,Damp Rock,damp-rock,12,200,262
+58,Dark Gem,dark-gem,42,200,604
+59,Dawn Stone,dawn-stone,10,2100,109
+60,DeepSeaScale,deepseascale,18,200,204
+61,DeepSeaTooth,deepseatooth,18,200,203
+62,Destiny Knot,destiny-knot,12,200,257
+63,Dire Hit,dire-hit,1,650,56
+64,Dive Ball,dive-ball,33,1000,7
+65,Dome Fossil,dome-fossil,35,1000,102
+66,Douse Drive,douse-drive,18,1000,563
+67,Draco Plate,draco-plate,17,1000,288
+68,Dragon Fang,dragon-fang,19,100,227
+69,Dragon Gem,dragon-gem,42,200,668
+70,Dragon Scale,dragon-scale,10,2100,212
+71,Dread Plate,dread-plate,17,1000,289
+72,Dream Ball,dream-ball,33,0,617
+73,Dubious Disc,dubious-disc,10,2100,301
+74,Durin Berry,durin-berry,8,20,159
+75,Dusk Ball,dusk-ball,33,1000,13
+76,Dusk Stone,dusk-stone,10,2100,108
+77,Earth Plate,earth-plate,17,1000,282
+78,Eject Button,eject-button,12,200,590
+79,Electirizer,electirizer,10,2100,299
+80,Electric Gem,electric-gem,42,200,593
+81,Elixir,elixir,28,3000,40
+82,Energy Root,energy-root,27,800,35
+83,EnergyPowder,energypowder,27,500,34
+84,Enigma Berry,enigma-berry,4,20,185
+85,Escape Rope,escape-rope,11,550,78
+86,Ether,ether,28,1200,38
+87,Everstone,everstone,16,200,206
+88,Eviolite,eviolite,12,200,581
+89,Exp. Share,exp-share,16,3000,193
+90,Expert Belt,expert-belt,12,200,245
+91,Fast Ball,fast-ball,39,300,453
+92,Fighting Gem,fighting-gem,42,200,596
+93,Figy Berry,figy-berry,6,20,136
+94,Fire Gem,fire-gem,42,200,591
+95,Fire Stone,fire-stone,10,2100,82
+96,Fist Plate,fist-plate,17,1000,280
+97,Flame Orb,flame-orb,15,100,250
+98,Flame Plate,flame-plate,17,1000,275
+99,Float Stone,float-stone,12,200,582
+100,Fluffy Tail,fluffy-tail,11,1000,64
+101,Flying Gem,flying-gem,42,200,599
+102,Focus Band,focus-band,12,200,207
+103,Focus Sash,focus-sash,12,200,252
+104,Fresh Water,fresh-water,27,200,30
+105,Friend Ball,friend-ball,39,300,454
+106,Full Heal,full-heal,30,600,27
+107,Full Incense,full-incense,15,9600,293
+108,Full Restore,full-restore,27,3000,23
+109,Ganlon Berry,ganlon-berry,5,20,179
+110,Genius Wing,genius-wing,26,3000,609
+111,Ghost Gem,ghost-gem,42,200,603
+112,Gooey Mulch,gooey-mulch,32,200,98
+113,Grass Gem,grass-gem,42,200,594
+114,Great Ball,great-ball,34,600,3
+115,Green Scarf,green-scarf,36,100,240
+116,Green Shard,green-shard,9,200,75
+117,Grepa Berry,grepa-berry,2,20,150
+118,Grip Claw,grip-claw,12,200,263
+119,Griseous Orb,griseous-orb,18,10000,442
+120,Ground Gem,ground-gem,42,200,598
+121,Growth Mulch,growth-mulch,32,200,95
+122,Guard Spec.,guard-spec,1,700,55
+123,Haban Berry,haban-berry,7,20,174
+124,Hard Stone,hard-stone,19,100,215
+125,Heal Ball,heal-ball,33,300,14
+126,Heal Powder,heal-powder,30,450,36
+127,Health Wing,health-wing,26,3000,606
+128,Heart Scale,heart-scale,9,100,93
+129,Heat Rock,heat-rock,12,200,261
+130,Heavy Ball,heavy-ball,39,300,452
+131,Helix Fossil,helix-fossil,35,1000,101
+132,Hondew Berry,hondew-berry,2,20,149
+133,Honey,honey,35,100,94
+134,HP Up,hp-up,26,9800,45
+135,Hyper Potion,hyper-potion,27,1200,25
+136,Iapapa Berry,iapapa-berry,6,20,140
+137,Ice Gem,ice-gem,42,200,595
+138,Ice Heal,ice-heal,30,250,20
+139,Icicle Plate,icicle-plate,17,1000,279
+140,Icy Rock,icy-rock,12,200,259
+141,Insect Plate,insect-plate,17,1000,285
+142,Iron,iron,26,9800,47
+143,Iron Ball,iron-ball,15,200,255
+144,Iron Plate,iron-plate,17,1000,290
+145,Jaboca Berry,jaboca-berry,4,20,188
+146,Kasib Berry,kasib-berry,7,20,173
+147,Kebia Berry,kebia-berry,7,20,167
+148,Kelpsy Berry,kelpsy-berry,2,20,147
+149,King's Rock,kings-rock,12,100,198
+150,Lagging Tail,lagging-tail,15,200,256
+151,Lansat Berry,lansat-berry,5,20,183
+152,Lava Cookie,lava-cookie,30,200,42
+153,Lax Incense,lax-incense,12,9600,232
+154,Leaf Stone,leaf-stone,10,2100,85
+155,Leftovers,leftovers,12,200,211
+156,Lemonade,lemonade,27,350,32
+157,Leppa Berry,leppa-berry,3,20,131
+158,Level Ball,level-ball,39,300,450
+159,Liechi Berry,liechi-berry,5,20,178
+160,Life Orb,life-orb,12,200,247
+161,Light Ball,light-ball,18,100,213
+162,Light Clay,light-clay,12,200,246
+163,Love Ball,love-ball,39,300,455
+164,Luck Incense,luck-incense,16,9600,296
+165,Lucky Egg,lucky-egg,16,200,208
+166,Lucky Punch,lucky-punch,18,10,233
+167,Lum Berry,lum-berry,3,20,134
+168,Lure Ball,lure-ball,39,300,449
+169,Lustrous Orb,lustrous-orb,18,10000,113
+170,Luxury Ball,luxury-ball,33,1000,11
+171,Macho Brace,macho-brace,14,3000,192
+172,Magmarizer,magmarizer,10,2100,300
+173,Magnet,magnet,19,100,219
+174,Mago Berry,mago-berry,6,20,138
+175,Magost Berry,magost-berry,8,20,153
+176,Master Ball,master-ball,34,0,1
+177,Max Elixir,max-elixir,28,4500,41
+178,Max Ether,max-ether,28,2000,39
+179,Max Potion,max-potion,27,2500,24
+180,Max Repel,max-repel,11,700,77
+181,Max Revive,max-revive,29,4000,29
+182,Meadow Plate,meadow-plate,17,1000,278
+183,Mental Herb,mental-herb,12,100,196
+184,Metal Coat,metal-coat,19,100,210
+185,Metal Powder,metal-powder,18,10,234
+186,Metronome,metronome,12,200,254
+187,Micle Berry,micle-berry,5,20,186
+188,Mind Plate,mind-plate,17,1000,284
+189,Miracle Seed,miracle-seed,19,100,216
+190,Moomoo Milk,moomoo-milk,27,500,33
+191,Moon Ball,moon-ball,39,300,451
+192,Moon Stone,moon-stone,10,2100,81
+193,Muscle Band,muscle-band,12,200,243
+194,Muscle Wing,muscle-wing,26,3000,607
+195,Mystic Water,mystic-water,19,100,220
+196,Nanab Berry,nanab-berry,8,20,143
+197,Nest Ball,nest-ball,33,1000,8
+198,Net Ball,net-ball,33,1000,6
+199,NeverMeltIce,nevermeltice,19,100,223
+200,Nomel Berry,nomel-berry,8,20,155
+201,Normal Gem,normal-gem,42,200,669
+202,Nugget,nugget,24,10000,92
+203,Occa Berry,occa-berry,7,20,161
+204,Odd Incense,odd-incense,19,9600,291
+205,Odd Keystone,odd-keystone,35,2100,111
+206,Old Amber,old-amber,35,1000,103
+207,Old Gateau,old-gateau,30,200,54
+208,Oran Berry,oran-berry,3,20,132
+209,Oval Stone,oval-stone,10,2100,110
+210,Pamtre Berry,pamtre-berry,8,20,157
+211,Park Ball,park-ball,34,0,456
+212,Parlyz Heal,parlyz-heal,30,200,22
+213,Pass Orb,pass-orb,12,200,616
+214,Passho Berry,passho-berry,7,20,162
+215,Payapa Berry,payapa-berry,7,20,170
+216,Pearl,pearl,24,1400,88
+217,Pearl String,pearl-string,24,0,623
+218,Pecha Berry,pecha-berry,3,20,128
+219,Persim Berry,persim-berry,3,20,133
+220,Petaya Berry,petaya-berry,5,20,181
+221,Pinap Berry,pinap-berry,8,20,145
+222,Pink Scarf,pink-scarf,36,100,239
+223,Plume Fossil,plume-fossil,35,1000,614
+224,Poison Barb,poison-barb,19,100,222
+225,Poison Gem,poison-gem,42,200,597
+226,Poké Ball,poke-ball,34,200,4
+227,Poké Doll,poke-doll,11,1000,63
+228,Poké Toy,poke-toy,11,1000,618
+229,Pomeg Berry,pomeg-berry,2,20,146
+230,Potion,potion,27,300,17
+231,Power Anklet,power-anklet,14,3000,270
+232,Power Band,power-band,14,3000,269
+233,Power Belt,power-belt,14,3000,267
+234,Power Bracer,power-bracer,14,3000,266
+235,Power Herb,power-herb,12,100,248
+236,Power Lens,power-lens,14,3000,268
+237,Power Weight,power-weight,14,3000,271
+238,PP Max,pp-max,26,9800,53
+239,PP Up,pp-up,26,9800,51
+240,Premier Ball,premier-ball,33,200,12
+241,Pretty Wing,pretty-wing,24,200,612
+242,Prism Scale,prism-scale,10,500,580
+243,Protector,protector,10,2100,298
+244,Protein,protein,26,9800,46
+245,Psychic Gem,psychic-gem,42,200,600
+246,Pure Incense,pure-incense,16,9600,297
+247,Qualot Berry,qualot-berry,2,20,148
+248,Quick Ball,quick-ball,33,1000,15
+249,Quick Claw,quick-claw,12,100,194
+250,Quick Powder,quick-powder,18,10,251
+251,Rabuta Berry,rabuta-berry,8,20,154
+252,Rare Bone,rare-bone,24,10000,106
+253,Rare Candy,rare-candy,26,4800,50
+254,Rawst Berry,rawst-berry,3,20,129
+255,Razor Claw,razor-claw,12,2100,303
+256,Razor Fang,razor-fang,12,2100,304
+257,Razz Berry,razz-berry,8,20,141
+258,Reaper Cloth,reaper-cloth,10,2100,302
+259,Red Card,red-card,12,200,585
+260,Red Flute,red-flute,38,300,67
+261,Red Scarf,red-scarf,36,100,237
+262,Red Shard,red-shard,9,200,72
+263,Relic Band,relic-band,24,0,629
+264,Relic Copper,relic-copper,24,0,625
+265,Relic Crown,relic-crown,24,0,631
+266,Relic Gold,relic-gold,24,0,627
+267,Relic Silver,relic-silver,24,0,626
+268,Relic Statue,relic-statue,24,0,630
+269,Relic Vase,relic-vase,24,0,628
+270,Repeat Ball,repeat-ball,33,1000,9
+271,Repel,repel,11,350,79
+272,Resist Wing,resist-wing,26,3000,608
+273,Revival Herb,revival-herb,29,2800,37
+274,Revive,revive,29,1500,28
+275,Rindo Berry,rindo-berry,7,20,164
+276,Ring Target,ring-target,12,200,586
+277,Rock Gem,rock-gem,42,200,602
+278,Rock Incense,rock-incense,19,9600,292
+279,Rocky Helmet,rocky-helmet,12,200,583
+280,Root Fossil,root-fossil,35,1000,99
+281,Rose Incense,rose-incense,19,9600,295
+282,Rowap Berry,rowap-berry,4,20,189
+283,Sacred Ash,sacred-ash,29,200,44
+284,Safari Ball,safari-ball,34,0,5
+285,Salac Berry,salac-berry,5,20,180
+286,Scope Lens,scope-lens,12,200,209
+287,Sea Incense,sea-incense,19,9600,231
+288,Sharp Beak,sharp-beak,19,100,221
+289,Shed Shell,shed-shell,12,100,272
+290,Shell Bell,shell-bell,12,200,230
+291,Shiny Stone,shiny-stone,10,2100,107
+292,Shoal Salt,shoal-salt,9,20,70
+293,Shoal Shell,shoal-shell,9,20,71
+294,Shock Drive,shock-drive,18,1000,564
+295,Shuca Berry,shuca-berry,7,20,168
+296,Silk Scarf,silk-scarf,19,100,228
+297,SilverPowder,silverpowder,19,100,199
+298,Sitrus Berry,sitrus-berry,3,20,135
+299,Skull Fossil,skull-fossil,35,1000,105
+300,Sky Plate,sky-plate,17,1000,283
+301,Smoke Ball,smoke-ball,12,200,205
+302,Smooth Rock,smooth-rock,12,200,260
+303,Soda Pop,soda-pop,27,300,31
+304,Soft Sand,soft-sand,19,100,214
+305,Soothe Bell,soothe-bell,16,100,195
+306,Soul Dew,soul-dew,18,200,202
+307,Spell Tag,spell-tag,19,100,224
+308,Spelon Berry,spelon-berry,8,20,156
+309,Splash Plate,splash-plate,17,1000,276
+310,Spooky Plate,spooky-plate,17,1000,287
+311,Sport Ball,sport-ball,34,0,457
+312,Stable Mulch,stable-mulch,32,200,97
+313,Star Piece,star-piece,24,9800,91
+314,Stardust,stardust,24,2000,90
+315,Starf Berry,starf-berry,5,20,184
+316,Steel Gem,steel-gem,42,200,605
+317,Stick,stick,18,200,236
+318,Sticky Barb,sticky-barb,15,200,265
+319,Stone Plate,stone-plate,17,1000,286
+320,Sun Stone,sun-stone,10,2100,80
+321,Super Potion,super-potion,27,700,26
+322,Super Repel,super-repel,11,500,76
+323,Sweet Heart,sweet-heart,27,100,567
+324,Swift Wing,swift-wing,26,3000,611
+325,Tamato Berry,tamato-berry,2,20,151
+326,Tanga Berry,tanga-berry,7,20,171
+327,Thick Club,thick-club,18,500,235
+328,Thunderstone,thunderstone,10,2100,83
+329,Timer Ball,timer-ball,33,1000,10
+330,TinyMushroom,tinymushroom,24,500,86
+331,Toxic Orb,toxic-orb,15,100,249
+332,Toxic Plate,toxic-plate,17,1000,281
+333,TwistedSpoon,twistedspoon,19,100,225
+334,Ultra Ball,ultra-ball,34,1200,2
+335,Up-Grade,up-grade,10,2100,229
+336,Wacan Berry,wacan-berry,7,20,163
+337,Water Gem,water-gem,42,200,592
+338,Water Stone,water-stone,10,2100,84
+339,Watmel Berry,watmel-berry,8,20,158
+340,Wave Incense,wave-incense,19,9600,294
+341,Wepear Berry,wepear-berry,8,20,144
+342,White Flute,white-flute,11,500,69
+343,White Herb,white-herb,12,100,191
+344,Wide Lens,wide-lens,12,200,242
+345,Wiki Berry,wiki-berry,6,20,137
+346,Wise Glasses,wise-glasses,12,200,244
+347,X Accuracy,x-accuracy,1,950,60
+348,X Attack,x-attack,1,500,57
+349,X Defend,x-defend,1,550,58
+350,X Sp. Def,x-sp-def,1,350,62
+351,X Special,x-special,1,350,61
+352,X Speed,x-speed,1,350,59
+353,Yache Berry,yache-berry,7,20,165
+354,Yellow Flute,yellow-flute,38,200,66
+355,Yellow Scarf,yellow-scarf,36,100,241
+356,Yellow Shard,yellow-shard,9,200,74
+357,Zap Plate,zap-plate,17,1000,277
+358,Zinc,zinc,26,9800,52
+359,Zoom Lens,zoom-lens,12,200,253

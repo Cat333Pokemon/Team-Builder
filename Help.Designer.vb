@@ -61,6 +61,7 @@ Partial Class Help
         Me.Controls.Add(Me.LinkLabel1)
         Me.Controls.Add(Me.TextBox1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MinimumSize = New System.Drawing.Size(315, 169)
         Me.Name = "Help"
         Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show
         Me.Text = "Help - Team Builder by Cat"

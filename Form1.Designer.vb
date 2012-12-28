@@ -772,6 +772,12 @@ Me.SaveMonDialog = New System.Windows.Forms.SaveFileDialog()
 Me.OpenMonDialog = New System.Windows.Forms.OpenFileDialog()
 Me.SaveHTMLDialog = New System.Windows.Forms.SaveFileDialog()
 Me.SaveCSVDialog = New System.Windows.Forms.SaveFileDialog()
+Me.pkm1_hiddenpower_base = New System.Windows.Forms.Label()
+Me.pkm2_hiddenpower_base = New System.Windows.Forms.Label()
+Me.pkm3_hiddenpower_base = New System.Windows.Forms.Label()
+Me.pkm4_hiddenpower_base = New System.Windows.Forms.Label()
+Me.pkm5_hiddenpower_base = New System.Windows.Forms.Label()
+Me.pkm6_hiddenpower_base = New System.Windows.Forms.Label()
 Me.MenuStrip1.SuspendLayout
 Me.Tabs.SuspendLayout
 Me.TabPage1.SuspendLayout
@@ -1037,7 +1043,7 @@ Me.ExportToolStripMenuItem.Text = "Export &HTML..."
 '
 Me.SaveAsCSVToolStripMenuItem.Name = "SaveAsCSVToolStripMenuItem"
 Me.SaveAsCSVToolStripMenuItem.Size = New System.Drawing.Size(181, 22)
-Me.SaveAsCSVToolStripMenuItem.Text = "Export &CSV..."
+Me.SaveAsCSVToolStripMenuItem.Text = "Export CS&V..."
 '
 'ToolStripSeparator3
 '
@@ -1340,6 +1346,7 @@ Me.TabPage1.Controls.Add(Me.pkm1_gender)
 Me.TabPage1.Controls.Add(Me.pkm1_shiny)
 Me.TabPage1.Controls.Add(Me.pkm1_helditem_image)
 Me.TabPage1.Controls.Add(Me.Label24)
+Me.TabPage1.Controls.Add(Me.pkm1_hiddenpower_base)
 Me.TabPage1.Controls.Add(Me.Label22)
 Me.TabPage1.Controls.Add(Me.GroupBox1)
 Me.TabPage1.Controls.Add(Me.pkm1_notes)
@@ -1431,7 +1438,7 @@ Me.pkm1_gender.TabIndex = 5
 'pkm1_shiny
 '
 Me.pkm1_shiny.AutoSize = true
-Me.pkm1_shiny.Location = New System.Drawing.Point(383, 240)
+Me.pkm1_shiny.Location = New System.Drawing.Point(400, 240)
 Me.pkm1_shiny.Name = "pkm1_shiny"
 Me.pkm1_shiny.Size = New System.Drawing.Size(52, 17)
 Me.pkm1_shiny.TabIndex = 35
@@ -2171,6 +2178,7 @@ Me.Label11.TextAlign = System.Drawing.ContentAlignment.TopRight
 'TabPage2
 '
 Me.TabPage2.BackColor = System.Drawing.SystemColors.Control
+Me.TabPage2.Controls.Add(Me.pkm2_hiddenpower_base)
 Me.TabPage2.Controls.Add(Me.Label131)
 Me.TabPage2.Controls.Add(Me.pkm2_gender)
 Me.TabPage2.Controls.Add(Me.pkm2_shiny)
@@ -2267,7 +2275,7 @@ Me.pkm2_gender.TabIndex = 86
 'pkm2_shiny
 '
 Me.pkm2_shiny.AutoSize = true
-Me.pkm2_shiny.Location = New System.Drawing.Point(383, 240)
+Me.pkm2_shiny.Location = New System.Drawing.Point(400, 240)
 Me.pkm2_shiny.Name = "pkm2_shiny"
 Me.pkm2_shiny.Size = New System.Drawing.Size(52, 17)
 Me.pkm2_shiny.TabIndex = 109
@@ -3211,6 +3219,7 @@ Me.pkm2_image.TabStop = false
 'TabPage3
 '
 Me.TabPage3.BackColor = System.Drawing.SystemColors.Control
+Me.TabPage3.Controls.Add(Me.pkm3_hiddenpower_base)
 Me.TabPage3.Controls.Add(Me.Label134)
 Me.TabPage3.Controls.Add(Me.pkm3_gender)
 Me.TabPage3.Controls.Add(Me.pkm3_shiny)
@@ -3306,7 +3315,7 @@ Me.pkm3_gender.TabIndex = 86
 'pkm3_shiny
 '
 Me.pkm3_shiny.AutoSize = true
-Me.pkm3_shiny.Location = New System.Drawing.Point(383, 240)
+Me.pkm3_shiny.Location = New System.Drawing.Point(400, 240)
 Me.pkm3_shiny.Name = "pkm3_shiny"
 Me.pkm3_shiny.Size = New System.Drawing.Size(52, 17)
 Me.pkm3_shiny.TabIndex = 109
@@ -4250,6 +4259,7 @@ Me.pkm3_image.TabStop = false
 'TabPage4
 '
 Me.TabPage4.BackColor = System.Drawing.SystemColors.Control
+Me.TabPage4.Controls.Add(Me.pkm4_hiddenpower_base)
 Me.TabPage4.Controls.Add(Me.Label139)
 Me.TabPage4.Controls.Add(Me.Label176)
 Me.TabPage4.Controls.Add(Me.Label177)
@@ -4375,7 +4385,7 @@ Me.pkm4_gender.TabIndex = 219
 'pkm4_shiny
 '
 Me.pkm4_shiny.AutoSize = true
-Me.pkm4_shiny.Location = New System.Drawing.Point(383, 240)
+Me.pkm4_shiny.Location = New System.Drawing.Point(400, 240)
 Me.pkm4_shiny.Name = "pkm4_shiny"
 Me.pkm4_shiny.Size = New System.Drawing.Size(52, 17)
 Me.pkm4_shiny.TabIndex = 242
@@ -5289,6 +5299,7 @@ Me.pkm4_image.TabStop = false
 'TabPage5
 '
 Me.TabPage5.BackColor = System.Drawing.SystemColors.Control
+Me.TabPage5.Controls.Add(Me.pkm5_hiddenpower_base)
 Me.TabPage5.Controls.Add(Me.Label140)
 Me.TabPage5.Controls.Add(Me.pkm5_gender)
 Me.TabPage5.Controls.Add(Me.pkm5_shiny)
@@ -5384,7 +5395,7 @@ Me.pkm5_gender.TabIndex = 222
 'pkm5_shiny
 '
 Me.pkm5_shiny.AutoSize = true
-Me.pkm5_shiny.Location = New System.Drawing.Point(383, 240)
+Me.pkm5_shiny.Location = New System.Drawing.Point(400, 240)
 Me.pkm5_shiny.Name = "pkm5_shiny"
 Me.pkm5_shiny.Size = New System.Drawing.Size(52, 17)
 Me.pkm5_shiny.TabIndex = 245
@@ -6327,6 +6338,7 @@ Me.pkm5_image.TabStop = false
 'TabPage6
 '
 Me.TabPage6.BackColor = System.Drawing.SystemColors.Control
+Me.TabPage6.Controls.Add(Me.pkm6_hiddenpower_base)
 Me.TabPage6.Controls.Add(Me.Label141)
 Me.TabPage6.Controls.Add(Me.pkm6_gender)
 Me.TabPage6.Controls.Add(Me.pkm6_shiny)
@@ -6422,7 +6434,7 @@ Me.pkm6_gender.TabIndex = 222
 'pkm6_shiny
 '
 Me.pkm6_shiny.AutoSize = true
-Me.pkm6_shiny.Location = New System.Drawing.Point(383, 240)
+Me.pkm6_shiny.Location = New System.Drawing.Point(400, 240)
 Me.pkm6_shiny.Name = "pkm6_shiny"
 Me.pkm6_shiny.Size = New System.Drawing.Size(52, 17)
 Me.pkm6_shiny.TabIndex = 245
@@ -8853,6 +8865,60 @@ Me.SaveCSVDialog.DefaultExt = "csv"
 Me.SaveCSVDialog.Filter = "Comma-Separated Values|*.csv|All Files|*.*"
 Me.SaveCSVDialog.Title = "Export Team To CSV"
 '
+'pkm1_hiddenpower_base
+'
+Me.pkm1_hiddenpower_base.AutoSize = true
+Me.pkm1_hiddenpower_base.Location = New System.Drawing.Point(366, 242)
+Me.pkm1_hiddenpower_base.Name = "pkm1_hiddenpower_base"
+Me.pkm1_hiddenpower_base.Size = New System.Drawing.Size(19, 13)
+Me.pkm1_hiddenpower_base.TabIndex = 45
+Me.pkm1_hiddenpower_base.Text = "30"
+'
+'pkm2_hiddenpower_base
+'
+Me.pkm2_hiddenpower_base.AutoSize = true
+Me.pkm2_hiddenpower_base.Location = New System.Drawing.Point(366, 242)
+Me.pkm2_hiddenpower_base.Name = "pkm2_hiddenpower_base"
+Me.pkm2_hiddenpower_base.Size = New System.Drawing.Size(19, 13)
+Me.pkm2_hiddenpower_base.TabIndex = 116
+Me.pkm2_hiddenpower_base.Text = "30"
+'
+'pkm3_hiddenpower_base
+'
+Me.pkm3_hiddenpower_base.AutoSize = true
+Me.pkm3_hiddenpower_base.Location = New System.Drawing.Point(366, 242)
+Me.pkm3_hiddenpower_base.Name = "pkm3_hiddenpower_base"
+Me.pkm3_hiddenpower_base.Size = New System.Drawing.Size(19, 13)
+Me.pkm3_hiddenpower_base.TabIndex = 116
+Me.pkm3_hiddenpower_base.Text = "30"
+'
+'pkm4_hiddenpower_base
+'
+Me.pkm4_hiddenpower_base.AutoSize = true
+Me.pkm4_hiddenpower_base.Location = New System.Drawing.Point(366, 242)
+Me.pkm4_hiddenpower_base.Name = "pkm4_hiddenpower_base"
+Me.pkm4_hiddenpower_base.Size = New System.Drawing.Size(19, 13)
+Me.pkm4_hiddenpower_base.TabIndex = 252
+Me.pkm4_hiddenpower_base.Text = "30"
+'
+'pkm5_hiddenpower_base
+'
+Me.pkm5_hiddenpower_base.AutoSize = true
+Me.pkm5_hiddenpower_base.Location = New System.Drawing.Point(366, 242)
+Me.pkm5_hiddenpower_base.Name = "pkm5_hiddenpower_base"
+Me.pkm5_hiddenpower_base.Size = New System.Drawing.Size(19, 13)
+Me.pkm5_hiddenpower_base.TabIndex = 252
+Me.pkm5_hiddenpower_base.Text = "30"
+'
+'pkm6_hiddenpower_base
+'
+Me.pkm6_hiddenpower_base.AutoSize = true
+Me.pkm6_hiddenpower_base.Location = New System.Drawing.Point(366, 242)
+Me.pkm6_hiddenpower_base.Name = "pkm6_hiddenpower_base"
+Me.pkm6_hiddenpower_base.Size = New System.Drawing.Size(19, 13)
+Me.pkm6_hiddenpower_base.TabIndex = 252
+Me.pkm6_hiddenpower_base.Text = "30"
+'
 'Form1
 '
 Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
@@ -9816,5 +9882,11 @@ End Sub
     Friend WithEvents Label106 As System.Windows.Forms.Label
     Friend WithEvents SaveHTMLDialog As System.Windows.Forms.SaveFileDialog
     Friend WithEvents SaveCSVDialog As System.Windows.Forms.SaveFileDialog
+    Friend WithEvents pkm1_hiddenpower_base As System.Windows.Forms.Label
+    Friend WithEvents pkm2_hiddenpower_base As System.Windows.Forms.Label
+    Friend WithEvents pkm3_hiddenpower_base As System.Windows.Forms.Label
+    Friend WithEvents pkm4_hiddenpower_base As System.Windows.Forms.Label
+    Friend WithEvents pkm5_hiddenpower_base As System.Windows.Forms.Label
+    Friend WithEvents pkm6_hiddenpower_base As System.Windows.Forms.Label
 
 End Class
