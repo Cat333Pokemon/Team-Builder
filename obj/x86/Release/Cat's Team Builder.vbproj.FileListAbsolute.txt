@@ -14,3 +14,4 @@ d:\documents\visual studio 2010\Projects\Cat's Team Builder\obj\x86\Release\Team
 d:\documents\visual studio 2010\Projects\Cat's Team Builder\obj\x86\Release\Team Builder by Cat.exe
 d:\documents\visual studio 2010\Projects\Cat's Team Builder\obj\x86\Release\Team Builder by Cat.xml
 d:\documents\visual studio 2010\Projects\Cat's Team Builder\obj\x86\Release\Team Builder by Cat.pdb
+d:\documents\visual studio 2010\Projects\Cat's Team Builder\obj\x86\Release\Team_Builder.TextExport.resources

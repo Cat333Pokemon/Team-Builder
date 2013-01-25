@@ -537,7 +537,7 @@ Public Class Form1
                 NewWeakness.Location = New System.Drawing.Point(StartWeak, 12)
                 '4x
                 If pokedata(24)(i) > 200 Then
-                    NewWeakness.BackColor = Color.DarkSlateBlue
+                    NewWeakness.BackColor = Color.DarkRed
                     Dim NewTip As New ToolTip
                     NewTip.SetToolTip(NewWeakness, "4×")
                 Else
@@ -559,7 +559,7 @@ Public Class Form1
                     Dim NewTip As New ToolTip
                     NewTip.SetToolTip(NewResistance, "0×")
                 ElseIf pokedata(24)(i) < 50 Then
-                    NewResistance.BackColor = Color.DarkRed
+                    NewResistance.BackColor = Color.Green
                     Dim NewTip As New ToolTip
                     NewTip.SetToolTip(NewResistance, "¼×")
                 Else
@@ -787,6 +787,7 @@ Public Class Form1
         Dim Command As New System.Data.SqlServerCe.SqlCeCommand("SELECT identifier FROM items WHERE items.id = " & pkm1_helditem.SelectedIndex, Connection)
         Dim myReader As System.Data.SqlServerCe.SqlCeDataReader = Command.ExecuteReader(CommandBehavior.Default)
 
+        pkm1_helditem_image.Image = Nothing
         While myReader.Read()
             pkm1_helditem_image.Image = My.Resources.ResourceManager.GetObject(myReader.GetString(0).Replace("-", "_"))
         End While
@@ -912,7 +913,7 @@ Public Class Form1
                 NewWeakness.Location = New System.Drawing.Point(StartWeak, 12)
                 '4x
                 If pokedata(24)(i) > 200 Then
-                    NewWeakness.BackColor = Color.DarkSlateBlue
+                    NewWeakness.BackColor = Color.DarkRed
                     Dim NewTip As New ToolTip
                     NewTip.SetToolTip(NewWeakness, "4×")
                 Else
@@ -934,7 +935,7 @@ Public Class Form1
                     Dim NewTip As New ToolTip
                     NewTip.SetToolTip(NewResistance, "0×")
                 ElseIf pokedata(24)(i) < 50 Then
-                    NewResistance.BackColor = Color.DarkRed
+                    NewResistance.BackColor = Color.Green
                     Dim NewTip As New ToolTip
                     NewTip.SetToolTip(NewResistance, "¼×")
                 Else
@@ -1161,6 +1162,7 @@ Public Class Form1
         Dim Command As New System.Data.SqlServerCe.SqlCeCommand("SELECT identifier FROM items WHERE items.id = " & pkm2_helditem.SelectedIndex, Connection)
         Dim myReader As System.Data.SqlServerCe.SqlCeDataReader = Command.ExecuteReader(CommandBehavior.Default)
 
+        pkm2_helditem_image.Image = Nothing
         While myReader.Read()
             pkm2_helditem_image.Image = My.Resources.ResourceManager.GetObject(myReader.GetString(0).Replace("-", "_"))
         End While
@@ -1286,7 +1288,7 @@ Public Class Form1
                 NewWeakness.Location = New System.Drawing.Point(StartWeak, 12)
                 '4x
                 If pokedata(24)(i) > 200 Then
-                    NewWeakness.BackColor = Color.DarkSlateBlue
+                    NewWeakness.BackColor = Color.DarkRed
                     Dim NewTip As New ToolTip
                     NewTip.SetToolTip(NewWeakness, "4×")
                 Else
@@ -1308,7 +1310,7 @@ Public Class Form1
                     Dim NewTip As New ToolTip
                     NewTip.SetToolTip(NewResistance, "0×")
                 ElseIf pokedata(24)(i) < 50 Then
-                    NewResistance.BackColor = Color.DarkRed
+                    NewResistance.BackColor = Color.Green
                     Dim NewTip As New ToolTip
                     NewTip.SetToolTip(NewResistance, "¼×")
                 Else
@@ -1535,6 +1537,7 @@ Public Class Form1
         Dim Command As New System.Data.SqlServerCe.SqlCeCommand("SELECT identifier FROM items WHERE items.id = " & pkm3_helditem.SelectedIndex, Connection)
         Dim myReader As System.Data.SqlServerCe.SqlCeDataReader = Command.ExecuteReader(CommandBehavior.Default)
 
+        pkm3_helditem_image.Image = Nothing
         While myReader.Read()
             pkm3_helditem_image.Image = My.Resources.ResourceManager.GetObject(myReader.GetString(0).Replace("-", "_"))
         End While
@@ -1660,7 +1663,7 @@ Public Class Form1
                 NewWeakness.Location = New System.Drawing.Point(StartWeak, 12)
                 '4x
                 If pokedata(24)(i) > 200 Then
-                    NewWeakness.BackColor = Color.DarkSlateBlue
+                    NewWeakness.BackColor = Color.DarkRed
                     Dim NewTip As New ToolTip
                     NewTip.SetToolTip(NewWeakness, "4×")
                 Else
@@ -1682,7 +1685,7 @@ Public Class Form1
                     Dim NewTip As New ToolTip
                     NewTip.SetToolTip(NewResistance, "0×")
                 ElseIf pokedata(24)(i) < 50 Then
-                    NewResistance.BackColor = Color.DarkRed
+                    NewResistance.BackColor = Color.Green
                     Dim NewTip As New ToolTip
                     NewTip.SetToolTip(NewResistance, "¼×")
                 Else
@@ -1909,6 +1912,7 @@ Public Class Form1
         Dim Command As New System.Data.SqlServerCe.SqlCeCommand("SELECT identifier FROM items WHERE items.id = " & pkm4_helditem.SelectedIndex, Connection)
         Dim myReader As System.Data.SqlServerCe.SqlCeDataReader = Command.ExecuteReader(CommandBehavior.Default)
 
+        pkm4_helditem_image.Image = Nothing
         While myReader.Read()
             pkm4_helditem_image.Image = My.Resources.ResourceManager.GetObject(myReader.GetString(0).Replace("-", "_"))
         End While
@@ -2034,7 +2038,7 @@ Public Class Form1
                 NewWeakness.Location = New System.Drawing.Point(StartWeak, 12)
                 '4x
                 If pokedata(24)(i) > 200 Then
-                    NewWeakness.BackColor = Color.DarkSlateBlue
+                    NewWeakness.BackColor = Color.DarkRed
                     Dim NewTip As New ToolTip
                     NewTip.SetToolTip(NewWeakness, "4×")
                 Else
@@ -2056,7 +2060,7 @@ Public Class Form1
                     Dim NewTip As New ToolTip
                     NewTip.SetToolTip(NewResistance, "0×")
                 ElseIf pokedata(24)(i) < 50 Then
-                    NewResistance.BackColor = Color.DarkRed
+                    NewResistance.BackColor = Color.Green
                     Dim NewTip As New ToolTip
                     NewTip.SetToolTip(NewResistance, "¼×")
                 Else
@@ -2283,6 +2287,7 @@ Public Class Form1
         Dim Command As New System.Data.SqlServerCe.SqlCeCommand("SELECT identifier FROM items WHERE items.id = " & pkm5_helditem.SelectedIndex, Connection)
         Dim myReader As System.Data.SqlServerCe.SqlCeDataReader = Command.ExecuteReader(CommandBehavior.Default)
 
+        pkm5_helditem_image.Image = Nothing
         While myReader.Read()
             pkm5_helditem_image.Image = My.Resources.ResourceManager.GetObject(myReader.GetString(0).Replace("-", "_"))
         End While
@@ -2408,7 +2413,7 @@ Public Class Form1
                 NewWeakness.Location = New System.Drawing.Point(StartWeak, 12)
                 '4x
                 If pokedata(24)(i) > 200 Then
-                    NewWeakness.BackColor = Color.DarkSlateBlue
+                    NewWeakness.BackColor = Color.DarkRed
                     Dim NewTip As New ToolTip
                     NewTip.SetToolTip(NewWeakness, "4×")
                 Else
@@ -2430,7 +2435,7 @@ Public Class Form1
                     Dim NewTip As New ToolTip
                     NewTip.SetToolTip(NewResistance, "0×")
                 ElseIf pokedata(24)(i) < 50 Then
-                    NewResistance.BackColor = Color.DarkRed
+                    NewResistance.BackColor = Color.Green
                     Dim NewTip As New ToolTip
                     NewTip.SetToolTip(NewResistance, "¼×")
                 Else
@@ -2657,6 +2662,7 @@ Public Class Form1
         Dim Command As New System.Data.SqlServerCe.SqlCeCommand("SELECT identifier FROM items WHERE items.id = " & pkm6_helditem.SelectedIndex, Connection)
         Dim myReader As System.Data.SqlServerCe.SqlCeDataReader = Command.ExecuteReader(CommandBehavior.Default)
 
+        pkm6_helditem_image.Image = Nothing
         While myReader.Read()
             pkm6_helditem_image.Image = My.Resources.ResourceManager.GetObject(myReader.GetString(0).Replace("-", "_"))
         End While
@@ -2756,6 +2762,9 @@ Public Class Form1
         For Each Ctrl In TableLayoutPanel1.Controls
             If Ctrl.Name.Contains("type") Then
                 Ctrl.Text = ""
+                Ctrl.forecolor = Color.Black
+                Ctrl.BackColor = Color.Transparent
+                Ctrl.Font = New Font(prototype:=Ctrl.Font, newStyle:=FontStyle.Regular)
             End If
         Next
 
@@ -2766,9 +2775,17 @@ Public Class Form1
                 Select Case Ctrl.BackColor
                     Case Color.DarkSlateBlue
                         TableLayoutPanel1.Controls(Ctrl.Tag & "_4").Text = Val(TableLayoutPanel1.Controls(Ctrl.Tag & "_4").Text) + 1
-                    Case Else
+                   Case Else
                         TableLayoutPanel1.Controls(Ctrl.Tag & "_2").Text = Val(TableLayoutPanel1.Controls(Ctrl.Tag & "_2").Text) + 1
                 End Select
+                If Val(TableLayoutPanel1.Controls(Ctrl.Tag & "_4").Text) + Val(TableLayoutPanel1.Controls(Ctrl.Tag & "_2").Text) >= 3 Then
+                    TableLayoutPanel1.Controls(Ctrl.Tag & "_2").BackColor = Color.LightPink
+                    TableLayoutPanel1.Controls(Ctrl.Tag & "_2").ForeColor = Color.Red
+                    TableLayoutPanel1.Controls(Ctrl.Tag & "_2").Font = New Font(prototype:=TableLayoutPanel1.Controls(Ctrl.Tag & "_2").Font, newStyle:=FontStyle.Bold)
+                    TableLayoutPanel1.Controls(Ctrl.Tag & "_4").BackColor = Color.LightPink
+                    TableLayoutPanel1.Controls(Ctrl.Tag & "_4").ForeColor = Color.Red
+                    TableLayoutPanel1.Controls(Ctrl.Tag & "_4").Font = New Font(prototype:=TableLayoutPanel1.Controls(Ctrl.Tag & "_4").Font, newStyle:=FontStyle.Bold)
+                End If
             Next Ctrl
         Next WkCtrl
         For Each RsCtrl In {pkm1_resistances, pkm2_resistances, _
@@ -2780,9 +2797,17 @@ Public Class Form1
                         TableLayoutPanel1.Controls(Ctrl.Tag & "_14").Text = Val(TableLayoutPanel1.Controls(Ctrl.Tag & "_14").Text) + 1
                     Case Color.Black
                         TableLayoutPanel1.Controls(Ctrl.Tag & "_0").Text = Val(TableLayoutPanel1.Controls(Ctrl.Tag & "_0").Text) + 1
-                    Case Else
+                     Case Else
                         TableLayoutPanel1.Controls(Ctrl.Tag & "_12").Text = Val(TableLayoutPanel1.Controls(Ctrl.Tag & "_12").Text) + 1
                 End Select
+                If Val(TableLayoutPanel1.Controls(Ctrl.Tag & "_14").Text) + Val(TableLayoutPanel1.Controls(Ctrl.Tag & "_12").Text) + Val(TableLayoutPanel1.Controls(Ctrl.Tag & "_0").Text) >= 3 Then
+                    TableLayoutPanel1.Controls(Ctrl.Tag & "_14").BackColor = Color.LightGreen
+                    TableLayoutPanel1.Controls(Ctrl.Tag & "_14").Font = New Font(prototype:=TableLayoutPanel1.Controls(Ctrl.Tag & "_14").Font, newStyle:=FontStyle.Bold)
+                    TableLayoutPanel1.Controls(Ctrl.Tag & "_12").BackColor = Color.LightGreen
+                    TableLayoutPanel1.Controls(Ctrl.Tag & "_12").Font = New Font(prototype:=TableLayoutPanel1.Controls(Ctrl.Tag & "_12").Font, newStyle:=FontStyle.Bold)
+                    TableLayoutPanel1.Controls(Ctrl.Tag & "_0").BackColor = Color.LightGreen
+                    TableLayoutPanel1.Controls(Ctrl.Tag & "_0").Font = New Font(prototype:=TableLayoutPanel1.Controls(Ctrl.Tag & "_0").Font, newStyle:=FontStyle.Bold)
+                End If
             Next Ctrl
         Next RsCtrl
 
@@ -3080,6 +3105,7 @@ Public Class Form1
             Dim set6 As String = sr.ReadLine()
             Dim hash As String = sr.ReadLine()
             sr.Close()
+            Dim curindex As Integer
 
             Dim checksum As String = set1 & vbCrLf & _
                 set2 & vbCrLf & set3 & vbCrLf & set4 & _
@@ -3093,7 +3119,9 @@ Public Class Form1
                 Dim string5() As String = Split(set5, ",")
                 Dim string6() As String = Split(set6, ",")
 
-                pkm1.SelectedIndex = Val(string1(0))
+                curindex = Val(string1(0))
+                pkm1.SelectedIndex = 0
+                If curindex > 0 Then pkm1.SelectedIndex = curindex
                 pkm1_nickname.Text = System.Text.Encoding.UTF8.GetString(Convert.FromBase64String(string1(1)))
                 pkm1_helditem.SelectedIndex = Val(string1(2))
                 pkm1_gender.SelectedIndex = Val(string1(3))
@@ -3120,7 +3148,9 @@ Public Class Form1
                 pkm1_move4.SelectedIndex = Val(string1(23))
                 pkm1_notes.Text = System.Text.Encoding.UTF8.GetString(Convert.FromBase64String(string1(24)))
 
-                pkm2.SelectedIndex = Val(string2(0))
+                curindex = Val(string2(0))
+                pkm2.SelectedIndex = 0
+                If curindex > 0 Then pkm2.SelectedIndex = curindex
                 pkm2_nickname.Text = System.Text.Encoding.UTF8.GetString(Convert.FromBase64String(string2(1)))
                 pkm2_helditem.SelectedIndex = Val(string2(2))
                 pkm2_gender.SelectedIndex = Val(string2(3))
@@ -3147,7 +3177,9 @@ Public Class Form1
                 pkm2_move4.SelectedIndex = Val(string2(23))
                 pkm2_notes.Text = System.Text.Encoding.UTF8.GetString(Convert.FromBase64String(string2(24)))
 
-                pkm3.SelectedIndex = Val(string3(0))
+                curindex = Val(string3(0))
+                pkm3.SelectedIndex = 0
+                If curindex > 0 Then pkm3.SelectedIndex = curindex
                 pkm3_nickname.Text = System.Text.Encoding.UTF8.GetString(Convert.FromBase64String(string3(1)))
                 pkm3_helditem.SelectedIndex = Val(string3(2))
                 pkm3_gender.SelectedIndex = Val(string3(3))
@@ -3174,7 +3206,9 @@ Public Class Form1
                 pkm3_move4.SelectedIndex = Val(string3(23))
                 pkm3_notes.Text = System.Text.Encoding.UTF8.GetString(Convert.FromBase64String(string3(24)))
 
-                pkm4.SelectedIndex = Val(string4(0))
+                curindex = Val(string4(0))
+                pkm4.SelectedIndex = 0
+                If curindex > 0 Then pkm4.SelectedIndex = curindex
                 pkm4_nickname.Text = System.Text.Encoding.UTF8.GetString(Convert.FromBase64String(string4(1)))
                 pkm4_helditem.SelectedIndex = Val(string4(2))
                 pkm4_gender.SelectedIndex = Val(string4(3))
@@ -3201,7 +3235,9 @@ Public Class Form1
                 pkm4_move4.SelectedIndex = Val(string4(23))
                 pkm4_notes.Text = System.Text.Encoding.UTF8.GetString(Convert.FromBase64String(string4(24)))
 
-                pkm5.SelectedIndex = Val(string5(0))
+                curindex = Val(string5(0))
+                pkm5.SelectedIndex = 0
+                If curindex > 0 Then pkm5.SelectedIndex = curindex
                 pkm5_nickname.Text = System.Text.Encoding.UTF8.GetString(Convert.FromBase64String(string5(1)))
                 pkm5_helditem.SelectedIndex = Val(string5(2))
                 pkm5_gender.SelectedIndex = Val(string5(3))
@@ -3228,7 +3264,9 @@ Public Class Form1
                 pkm5_move4.SelectedIndex = Val(string5(23))
                 pkm5_notes.Text = System.Text.Encoding.UTF8.GetString(Convert.FromBase64String(string5(24)))
 
-                pkm6.SelectedIndex = Val(string6(0))
+                curindex = Val(string6(0))
+                pkm6.SelectedIndex = 0
+                If curindex > 0 Then pkm6.SelectedIndex = curindex
                 pkm6_nickname.Text = System.Text.Encoding.UTF8.GetString(Convert.FromBase64String(string6(1)))
                 pkm6_helditem.SelectedIndex = Val(string6(2))
                 pkm6_gender.SelectedIndex = Val(string6(3))
@@ -4130,5 +4168,194 @@ Public Class Form1
         PrintBrowser.Document.Write(BuildHTML(False))
         PrintBrowser.ShowPrintDialog()
         PrintBrowser.Dispose()
+    End Sub
+
+    Private Sub ExportTextToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ExportTextToolStripMenuItem.Click
+        Dim PlainString As String = ""
+        If pkm1.SelectedIndex > 0 Then
+            If pkm1_nickname.Text.Length > 0 Then
+                PlainString &= pokemonNames(0) & " (" & pkm1_nickname.Text & ")"
+            Else
+                PlainString &= pokemonNames(0)
+            End If
+            If pkm1_helditem.SelectedIndex > 0 Then
+                PlainString &= " @ " & pkm1_helditem.Text
+            Else
+                PlainString &= " @ No item"
+            End If
+            PlainString &= vbCrLf & pkm1_ability.Text
+            If pkm1_nature.SelectedIndex > 0 Then
+                PlainString &= "/" & pkm1_nature.Text
+            End If
+            If pkm1_move1.SelectedIndex > 0 Then
+                PlainString &= vbCrLf & "- " & pkm1_move1.Text
+            End If
+            If pkm1_move2.SelectedIndex > 0 Then
+                PlainString &= vbCrLf & "- " & pkm1_move2.Text
+            End If
+            If pkm1_move3.SelectedIndex > 0 Then
+                PlainString &= vbCrLf & "- " & pkm1_move3.Text
+            End If
+            If pkm1_move4.SelectedIndex > 0 Then
+                PlainString &= vbCrLf & "- " & pkm1_move4.Text
+            End If
+        End If
+        If pkm2.SelectedIndex > 0 Then
+            If PlainString.Length > 0 Then
+                PlainString &= vbCrLf & vbCrLf
+            End If
+            If pkm2_nickname.Text.Length > 0 Then
+                PlainString &= pokemonNames(1) & " (" & pkm2_nickname.Text & ")"
+            Else
+                PlainString &= pokemonNames(1)
+            End If
+            If pkm2_helditem.SelectedIndex > 0 Then
+                PlainString &= " @ " & pkm2_helditem.Text
+            Else
+                PlainString &= " @ No item"
+            End If
+            PlainString &= vbCrLf & pkm2_ability.Text
+            If pkm2_nature.SelectedIndex > 0 Then
+                PlainString &= "/" & pkm2_nature.Text
+            End If
+            If pkm2_move1.SelectedIndex > 0 Then
+                PlainString &= vbCrLf & "- " & pkm2_move1.Text
+            End If
+            If pkm2_move2.SelectedIndex > 0 Then
+                PlainString &= vbCrLf & "- " & pkm2_move2.Text
+            End If
+            If pkm2_move3.SelectedIndex > 0 Then
+                PlainString &= vbCrLf & "- " & pkm2_move3.Text
+            End If
+            If pkm2_move4.SelectedIndex > 0 Then
+                PlainString &= vbCrLf & "- " & pkm2_move4.Text
+            End If
+        End If
+        If pkm3.SelectedIndex > 0 Then
+            If PlainString.Length > 0 Then
+                PlainString &= vbCrLf & vbCrLf
+            End If
+            If pkm3_nickname.Text.Length > 0 Then
+                PlainString &= pokemonNames(2) & " (" & pkm3_nickname.Text & ")"
+            Else
+                PlainString &= pokemonNames(2)
+            End If
+            If pkm3_helditem.SelectedIndex > 0 Then
+                PlainString &= " @ " & pkm3_helditem.Text
+            Else
+                PlainString &= " @ No item"
+            End If
+            PlainString &= vbCrLf & pkm3_ability.Text
+            If pkm3_nature.SelectedIndex > 0 Then
+                PlainString &= "/" & pkm3_nature.Text
+            End If
+            If pkm3_move1.SelectedIndex > 0 Then
+                PlainString &= vbCrLf & "- " & pkm3_move1.Text
+            End If
+            If pkm3_move2.SelectedIndex > 0 Then
+                PlainString &= vbCrLf & "- " & pkm3_move2.Text
+            End If
+            If pkm3_move3.SelectedIndex > 0 Then
+                PlainString &= vbCrLf & "- " & pkm3_move3.Text
+            End If
+            If pkm3_move4.SelectedIndex > 0 Then
+                PlainString &= vbCrLf & "- " & pkm3_move4.Text
+            End If
+        End If
+        If pkm4.SelectedIndex > 0 Then
+            If PlainString.Length > 0 Then
+                PlainString &= vbCrLf & vbCrLf
+            End If
+            If pkm4_nickname.Text.Length > 0 Then
+                PlainString &= pokemonNames(3) & " (" & pkm4_nickname.Text & ")"
+            Else
+                PlainString &= pokemonNames(3)
+            End If
+            If pkm4_helditem.SelectedIndex > 0 Then
+                PlainString &= " @ " & pkm4_helditem.Text
+            Else
+                PlainString &= " @ No item"
+            End If
+            PlainString &= vbCrLf & pkm4_ability.Text
+            If pkm4_nature.SelectedIndex > 0 Then
+                PlainString &= "/" & pkm4_nature.Text
+            End If
+            If pkm4_move1.SelectedIndex > 0 Then
+                PlainString &= vbCrLf & "- " & pkm4_move1.Text
+            End If
+            If pkm4_move2.SelectedIndex > 0 Then
+                PlainString &= vbCrLf & "- " & pkm4_move2.Text
+            End If
+            If pkm4_move3.SelectedIndex > 0 Then
+                PlainString &= vbCrLf & "- " & pkm4_move3.Text
+            End If
+            If pkm4_move4.SelectedIndex > 0 Then
+                PlainString &= vbCrLf & "- " & pkm4_move4.Text
+            End If
+        End If
+        If pkm5.SelectedIndex > 0 Then
+            If PlainString.Length > 0 Then
+                PlainString &= vbCrLf & vbCrLf
+            End If
+            If pkm5_nickname.Text.Length > 0 Then
+                PlainString &= pokemonNames(4) & " (" & pkm5_nickname.Text & ")"
+            Else
+                PlainString &= pokemonNames(4)
+            End If
+            If pkm5_helditem.SelectedIndex > 0 Then
+                PlainString &= " @ " & pkm5_helditem.Text
+            Else
+                PlainString &= " @ No item"
+            End If
+            PlainString &= vbCrLf & pkm5_ability.Text
+            If pkm5_nature.SelectedIndex > 0 Then
+                PlainString &= "/" & pkm5_nature.Text
+            End If
+            If pkm5_move1.SelectedIndex > 0 Then
+                PlainString &= vbCrLf & "- " & pkm5_move1.Text
+            End If
+            If pkm5_move2.SelectedIndex > 0 Then
+                PlainString &= vbCrLf & "- " & pkm5_move2.Text
+            End If
+            If pkm5_move3.SelectedIndex > 0 Then
+                PlainString &= vbCrLf & "- " & pkm5_move3.Text
+            End If
+            If pkm5_move4.SelectedIndex > 0 Then
+                PlainString &= vbCrLf & "- " & pkm5_move4.Text
+            End If
+        End If
+        If pkm6.SelectedIndex > 0 Then
+            If PlainString.Length > 0 Then
+                PlainString &= vbCrLf & vbCrLf
+            End If
+            If pkm6_nickname.Text.Length > 0 Then
+                PlainString &= pokemonNames(5) & " (" & pkm6_nickname.Text & ")"
+            Else
+                PlainString &= pokemonNames(5)
+            End If
+            If pkm6_helditem.SelectedIndex > 0 Then
+                PlainString &= " @ " & pkm6_helditem.Text
+            Else
+                PlainString &= " @ No item"
+            End If
+            PlainString &= vbCrLf & pkm6_ability.Text
+            If pkm6_nature.SelectedIndex > 0 Then
+                PlainString &= "/" & pkm6_nature.Text
+            End If
+            If pkm6_move1.SelectedIndex > 0 Then
+                PlainString &= vbCrLf & "- " & pkm6_move1.Text
+            End If
+            If pkm6_move2.SelectedIndex > 0 Then
+                PlainString &= vbCrLf & "- " & pkm6_move2.Text
+            End If
+            If pkm6_move3.SelectedIndex > 0 Then
+                PlainString &= vbCrLf & "- " & pkm6_move3.Text
+            End If
+            If pkm6_move4.SelectedIndex > 0 Then
+                PlainString &= vbCrLf & "- " & pkm6_move4.Text
+            End If
+        End If
+        TextExport.TextExportString.Text = PlainString
+        TextExport.Show()
     End Sub
 End Class

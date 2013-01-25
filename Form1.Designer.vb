@@ -71,6 +71,7 @@ Me.pkm1_gender = New System.Windows.Forms.ComboBox()
 Me.pkm1_shiny = New System.Windows.Forms.CheckBox()
 Me.pkm1_helditem_image = New System.Windows.Forms.PictureBox()
 Me.Label24 = New System.Windows.Forms.Label()
+Me.pkm1_hiddenpower_base = New System.Windows.Forms.Label()
 Me.Label22 = New System.Windows.Forms.Label()
 Me.GroupBox1 = New System.Windows.Forms.GroupBox()
 Me.Label15 = New System.Windows.Forms.Label()
@@ -143,6 +144,7 @@ Me.Label14 = New System.Windows.Forms.Label()
 Me.Label13 = New System.Windows.Forms.Label()
 Me.Label11 = New System.Windows.Forms.Label()
 Me.TabPage2 = New System.Windows.Forms.TabPage()
+Me.pkm2_hiddenpower_base = New System.Windows.Forms.Label()
 Me.Label131 = New System.Windows.Forms.Label()
 Me.pkm2_gender = New System.Windows.Forms.ComboBox()
 Me.pkm2_shiny = New System.Windows.Forms.CheckBox()
@@ -240,6 +242,7 @@ Me.pkm2_type2 = New System.Windows.Forms.PictureBox()
 Me.pkm2_type1 = New System.Windows.Forms.PictureBox()
 Me.pkm2_image = New System.Windows.Forms.PictureBox()
 Me.TabPage3 = New System.Windows.Forms.TabPage()
+Me.pkm3_hiddenpower_base = New System.Windows.Forms.Label()
 Me.Label134 = New System.Windows.Forms.Label()
 Me.pkm3_gender = New System.Windows.Forms.ComboBox()
 Me.pkm3_shiny = New System.Windows.Forms.CheckBox()
@@ -337,6 +340,7 @@ Me.pkm3_type2 = New System.Windows.Forms.PictureBox()
 Me.pkm3_type1 = New System.Windows.Forms.PictureBox()
 Me.pkm3_image = New System.Windows.Forms.PictureBox()
 Me.TabPage4 = New System.Windows.Forms.TabPage()
+Me.pkm4_hiddenpower_base = New System.Windows.Forms.Label()
 Me.Label139 = New System.Windows.Forms.Label()
 Me.Label176 = New System.Windows.Forms.Label()
 Me.Label177 = New System.Windows.Forms.Label()
@@ -434,6 +438,7 @@ Me.pkm4_type2 = New System.Windows.Forms.PictureBox()
 Me.pkm4_type1 = New System.Windows.Forms.PictureBox()
 Me.pkm4_image = New System.Windows.Forms.PictureBox()
 Me.TabPage5 = New System.Windows.Forms.TabPage()
+Me.pkm5_hiddenpower_base = New System.Windows.Forms.Label()
 Me.Label140 = New System.Windows.Forms.Label()
 Me.pkm5_gender = New System.Windows.Forms.ComboBox()
 Me.pkm5_shiny = New System.Windows.Forms.CheckBox()
@@ -531,6 +536,7 @@ Me.pkm5_type2 = New System.Windows.Forms.PictureBox()
 Me.pkm5_type1 = New System.Windows.Forms.PictureBox()
 Me.pkm5_image = New System.Windows.Forms.PictureBox()
 Me.TabPage6 = New System.Windows.Forms.TabPage()
+Me.pkm6_hiddenpower_base = New System.Windows.Forms.Label()
 Me.Label141 = New System.Windows.Forms.Label()
 Me.pkm6_gender = New System.Windows.Forms.ComboBox()
 Me.pkm6_shiny = New System.Windows.Forms.CheckBox()
@@ -772,12 +778,7 @@ Me.SaveMonDialog = New System.Windows.Forms.SaveFileDialog()
 Me.OpenMonDialog = New System.Windows.Forms.OpenFileDialog()
 Me.SaveHTMLDialog = New System.Windows.Forms.SaveFileDialog()
 Me.SaveCSVDialog = New System.Windows.Forms.SaveFileDialog()
-Me.pkm1_hiddenpower_base = New System.Windows.Forms.Label()
-Me.pkm2_hiddenpower_base = New System.Windows.Forms.Label()
-Me.pkm3_hiddenpower_base = New System.Windows.Forms.Label()
-Me.pkm4_hiddenpower_base = New System.Windows.Forms.Label()
-Me.pkm5_hiddenpower_base = New System.Windows.Forms.Label()
-Me.pkm6_hiddenpower_base = New System.Windows.Forms.Label()
+Me.ExportTextToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
 Me.MenuStrip1.SuspendLayout
 Me.Tabs.SuspendLayout
 Me.TabPage1.SuspendLayout
@@ -993,7 +994,7 @@ Me.MenuStrip1.Text = "MenuStrip1"
 '
 'FileToolStripMenuItem
 '
-Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NewToolStripMenuItem, Me.OpenToolStripMenuItem, Me.SaveToolStripMenuItem, Me.SaveAsToolStripMenuItem, Me.ToolStripSeparator1, Me.ExportToolStripMenuItem, Me.SaveAsCSVToolStripMenuItem, Me.ToolStripSeparator3, Me.PrintToolStripMenuItem, Me.ToolStripSeparator2, Me.ExitToolStripMenuItem})
+Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NewToolStripMenuItem, Me.OpenToolStripMenuItem, Me.SaveToolStripMenuItem, Me.SaveAsToolStripMenuItem, Me.ToolStripSeparator1, Me.ExportToolStripMenuItem, Me.SaveAsCSVToolStripMenuItem, Me.ExportTextToolStripMenuItem, Me.ToolStripSeparator3, Me.PrintToolStripMenuItem, Me.ToolStripSeparator2, Me.ExitToolStripMenuItem})
 Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
 Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
 Me.FileToolStripMenuItem.Text = "&File"
@@ -1461,6 +1462,15 @@ Me.Label24.Name = "Label24"
 Me.Label24.Size = New System.Drawing.Size(42, 13)
 Me.Label24.TabIndex = 45
 Me.Label24.Text = "Gender"
+'
+'pkm1_hiddenpower_base
+'
+Me.pkm1_hiddenpower_base.AutoSize = true
+Me.pkm1_hiddenpower_base.Location = New System.Drawing.Point(366, 242)
+Me.pkm1_hiddenpower_base.Name = "pkm1_hiddenpower_base"
+Me.pkm1_hiddenpower_base.Size = New System.Drawing.Size(19, 13)
+Me.pkm1_hiddenpower_base.TabIndex = 45
+Me.pkm1_hiddenpower_base.Text = "30"
 '
 'Label22
 '
@@ -2252,6 +2262,15 @@ Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
 Me.TabPage2.Size = New System.Drawing.Size(797, 332)
 Me.TabPage2.TabIndex = 1
 Me.TabPage2.Text = "Pokémon 2"
+'
+'pkm2_hiddenpower_base
+'
+Me.pkm2_hiddenpower_base.AutoSize = true
+Me.pkm2_hiddenpower_base.Location = New System.Drawing.Point(366, 242)
+Me.pkm2_hiddenpower_base.Name = "pkm2_hiddenpower_base"
+Me.pkm2_hiddenpower_base.Size = New System.Drawing.Size(19, 13)
+Me.pkm2_hiddenpower_base.TabIndex = 116
+Me.pkm2_hiddenpower_base.Text = "30"
 '
 'Label131
 '
@@ -3293,6 +3312,15 @@ Me.TabPage3.Size = New System.Drawing.Size(797, 332)
 Me.TabPage3.TabIndex = 2
 Me.TabPage3.Text = "Pokémon 3"
 '
+'pkm3_hiddenpower_base
+'
+Me.pkm3_hiddenpower_base.AutoSize = true
+Me.pkm3_hiddenpower_base.Location = New System.Drawing.Point(366, 242)
+Me.pkm3_hiddenpower_base.Name = "pkm3_hiddenpower_base"
+Me.pkm3_hiddenpower_base.Size = New System.Drawing.Size(19, 13)
+Me.pkm3_hiddenpower_base.TabIndex = 116
+Me.pkm3_hiddenpower_base.Text = "30"
+'
 'Label134
 '
 Me.Label134.AutoSize = true
@@ -4332,6 +4360,15 @@ Me.TabPage4.Name = "TabPage4"
 Me.TabPage4.Size = New System.Drawing.Size(797, 332)
 Me.TabPage4.TabIndex = 3
 Me.TabPage4.Text = "Pokémon 4"
+'
+'pkm4_hiddenpower_base
+'
+Me.pkm4_hiddenpower_base.AutoSize = true
+Me.pkm4_hiddenpower_base.Location = New System.Drawing.Point(366, 242)
+Me.pkm4_hiddenpower_base.Name = "pkm4_hiddenpower_base"
+Me.pkm4_hiddenpower_base.Size = New System.Drawing.Size(19, 13)
+Me.pkm4_hiddenpower_base.TabIndex = 252
+Me.pkm4_hiddenpower_base.Text = "30"
 '
 'Label139
 '
@@ -5373,6 +5410,15 @@ Me.TabPage5.Size = New System.Drawing.Size(797, 332)
 Me.TabPage5.TabIndex = 4
 Me.TabPage5.Text = "Pokémon 5"
 '
+'pkm5_hiddenpower_base
+'
+Me.pkm5_hiddenpower_base.AutoSize = true
+Me.pkm5_hiddenpower_base.Location = New System.Drawing.Point(366, 242)
+Me.pkm5_hiddenpower_base.Name = "pkm5_hiddenpower_base"
+Me.pkm5_hiddenpower_base.Size = New System.Drawing.Size(19, 13)
+Me.pkm5_hiddenpower_base.TabIndex = 252
+Me.pkm5_hiddenpower_base.Text = "30"
+'
 'Label140
 '
 Me.Label140.AutoSize = true
@@ -6411,6 +6457,15 @@ Me.TabPage6.Name = "TabPage6"
 Me.TabPage6.Size = New System.Drawing.Size(797, 332)
 Me.TabPage6.TabIndex = 5
 Me.TabPage6.Text = "Pokémon 6"
+'
+'pkm6_hiddenpower_base
+'
+Me.pkm6_hiddenpower_base.AutoSize = true
+Me.pkm6_hiddenpower_base.Location = New System.Drawing.Point(366, 242)
+Me.pkm6_hiddenpower_base.Name = "pkm6_hiddenpower_base"
+Me.pkm6_hiddenpower_base.Size = New System.Drawing.Size(19, 13)
+Me.pkm6_hiddenpower_base.TabIndex = 252
+Me.pkm6_hiddenpower_base.Text = "30"
 '
 'Label141
 '
@@ -7633,9 +7688,9 @@ Me.total_attack.TextAlign = System.Drawing.ContentAlignment.MiddleRight
 '
 'Label116
 '
-Me.Label116.Location = New System.Drawing.Point(216, 237)
+Me.Label116.Location = New System.Drawing.Point(216, 230)
 Me.Label116.Name = "Label116"
-Me.Label116.Size = New System.Drawing.Size(321, 71)
+Me.Label116.Size = New System.Drawing.Size(337, 97)
 Me.Label116.TabIndex = 6
 Me.Label116.Text = resources.GetString("Label116.Text")
 '
@@ -7702,7 +7757,7 @@ Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(Syste
 Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 32!))
 Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 32!))
 Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 32!))
-Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 32!))
+Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 33!))
 Me.TableLayoutPanel1.Controls.Add(Me.type1_0, 1, 1)
 Me.TableLayoutPanel1.Controls.Add(Me.Label123, 2, 0)
 Me.TableLayoutPanel1.Controls.Add(Me.Label118, 1, 0)
@@ -7847,7 +7902,7 @@ Me.type1_0.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
 'Label123
 '
 Me.Label123.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-Me.Label123.ForeColor = System.Drawing.Color.DarkSlateBlue
+Me.Label123.ForeColor = System.Drawing.Color.Green
 Me.Label123.Location = New System.Drawing.Point(71, 1)
 Me.Label123.Margin = New System.Windows.Forms.Padding(0)
 Me.Label123.Name = "Label123"
@@ -7870,7 +7925,7 @@ Me.Label118.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
 'Label124
 '
 Me.Label124.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-Me.Label124.ForeColor = System.Drawing.Color.SlateBlue
+Me.Label124.ForeColor = System.Drawing.Color.LimeGreen
 Me.Label124.Location = New System.Drawing.Point(104, 1)
 Me.Label124.Margin = New System.Windows.Forms.Padding(0)
 Me.Label124.Name = "Label124"
@@ -8865,59 +8920,11 @@ Me.SaveCSVDialog.DefaultExt = "csv"
 Me.SaveCSVDialog.Filter = "Comma-Separated Values|*.csv|All Files|*.*"
 Me.SaveCSVDialog.Title = "Export Team To CSV"
 '
-'pkm1_hiddenpower_base
+'ExportTextToolStripMenuItem
 '
-Me.pkm1_hiddenpower_base.AutoSize = true
-Me.pkm1_hiddenpower_base.Location = New System.Drawing.Point(366, 242)
-Me.pkm1_hiddenpower_base.Name = "pkm1_hiddenpower_base"
-Me.pkm1_hiddenpower_base.Size = New System.Drawing.Size(19, 13)
-Me.pkm1_hiddenpower_base.TabIndex = 45
-Me.pkm1_hiddenpower_base.Text = "30"
-'
-'pkm2_hiddenpower_base
-'
-Me.pkm2_hiddenpower_base.AutoSize = true
-Me.pkm2_hiddenpower_base.Location = New System.Drawing.Point(366, 242)
-Me.pkm2_hiddenpower_base.Name = "pkm2_hiddenpower_base"
-Me.pkm2_hiddenpower_base.Size = New System.Drawing.Size(19, 13)
-Me.pkm2_hiddenpower_base.TabIndex = 116
-Me.pkm2_hiddenpower_base.Text = "30"
-'
-'pkm3_hiddenpower_base
-'
-Me.pkm3_hiddenpower_base.AutoSize = true
-Me.pkm3_hiddenpower_base.Location = New System.Drawing.Point(366, 242)
-Me.pkm3_hiddenpower_base.Name = "pkm3_hiddenpower_base"
-Me.pkm3_hiddenpower_base.Size = New System.Drawing.Size(19, 13)
-Me.pkm3_hiddenpower_base.TabIndex = 116
-Me.pkm3_hiddenpower_base.Text = "30"
-'
-'pkm4_hiddenpower_base
-'
-Me.pkm4_hiddenpower_base.AutoSize = true
-Me.pkm4_hiddenpower_base.Location = New System.Drawing.Point(366, 242)
-Me.pkm4_hiddenpower_base.Name = "pkm4_hiddenpower_base"
-Me.pkm4_hiddenpower_base.Size = New System.Drawing.Size(19, 13)
-Me.pkm4_hiddenpower_base.TabIndex = 252
-Me.pkm4_hiddenpower_base.Text = "30"
-'
-'pkm5_hiddenpower_base
-'
-Me.pkm5_hiddenpower_base.AutoSize = true
-Me.pkm5_hiddenpower_base.Location = New System.Drawing.Point(366, 242)
-Me.pkm5_hiddenpower_base.Name = "pkm5_hiddenpower_base"
-Me.pkm5_hiddenpower_base.Size = New System.Drawing.Size(19, 13)
-Me.pkm5_hiddenpower_base.TabIndex = 252
-Me.pkm5_hiddenpower_base.Text = "30"
-'
-'pkm6_hiddenpower_base
-'
-Me.pkm6_hiddenpower_base.AutoSize = true
-Me.pkm6_hiddenpower_base.Location = New System.Drawing.Point(366, 242)
-Me.pkm6_hiddenpower_base.Name = "pkm6_hiddenpower_base"
-Me.pkm6_hiddenpower_base.Size = New System.Drawing.Size(19, 13)
-Me.pkm6_hiddenpower_base.TabIndex = 252
-Me.pkm6_hiddenpower_base.Text = "30"
+Me.ExportTextToolStripMenuItem.Name = "ExportTextToolStripMenuItem"
+Me.ExportTextToolStripMenuItem.Size = New System.Drawing.Size(181, 22)
+Me.ExportTextToolStripMenuItem.Text = "Export &Text"
 '
 'Form1
 '
@@ -9888,5 +9895,6 @@ End Sub
     Friend WithEvents pkm4_hiddenpower_base As System.Windows.Forms.Label
     Friend WithEvents pkm5_hiddenpower_base As System.Windows.Forms.Label
     Friend WithEvents pkm6_hiddenpower_base As System.Windows.Forms.Label
+    Friend WithEvents ExportTextToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 
 End Class
