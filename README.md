@@ -1,5 +1,4 @@
 # Team Builder by Cat
-Pokémon Gen 5 team builder from late 2012/early 2013
 
 This program is designed to assist competitive battlers interested in creating teams and analyzing their usefulness. Using data from the veekun Pokédex project, I've compiled a simplified database of essential Black & White 2 data to help create the perfect team.
 
