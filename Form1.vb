@@ -515,7 +515,23 @@ Public Class Form1
             pkm1_gender.Enabled = False
         End If
 
+        CalcWeakResist2(pokedata)
 
+        pkm1_species.Text = pokedata(21)
+
+        pokemonNames(0) = pokedata(5)
+        UpdateTab1()
+
+        CalcStats1()
+    End Sub
+
+    Private Sub pkm1_ability_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pkm1_ability.SelectedIndexChanged
+        Dim pokedata() As Object = UpdateMon(pkm1.SelectedIndex)
+        CalcWeakResist2(pokedata)
+    End Sub
+
+    'This one MUST be bassed by value to not upset the original values
+    Public Sub CalcWeakResist2(ByVal pokedata() As Object)
         For i = 1 To pkm1_weaknesses.Controls.Count
             pkm1_weaknesses.Controls(0).Dispose()
         Next
@@ -525,6 +541,25 @@ Public Class Form1
 
         Dim StartWeak As UShort = 4
         Dim StartResist As UShort = 4
+
+        Dim Efficacies As UShort()
+        If pkm1_ability.Items.Count > 0 Then
+            Efficacies = AbilityEfficacy(pkm1_ability.Items(pkm1_ability.SelectedIndex))
+        Else
+            Efficacies = AbilityEfficacy("")
+        End If
+
+
+        For i = 0 To 17
+            '0 is a stub
+            If i > 0 Then
+                If Efficacies(i) > 150 Or Efficacies(i) < 100 Then
+                    pokedata(24)(i - 1) = Efficacies(i)
+                ElseIf Efficacies(i) = 125 Then
+                    pokedata(24)(i - 1) *= 1.25
+                End If
+            End If
+        Next
 
         For i = 0 To 16
             If pokedata(24)(i) > 100 Then
@@ -536,7 +571,17 @@ Public Class Form1
                 NewWeakness.Tag = "type" & (i + 1)
                 NewWeakness.Location = New System.Drawing.Point(StartWeak, 12)
                 '4x
-                If pokedata(24)(i) > 200 Then
+                If pokedata(24)(i) = 125 Then
+                    Dim NewTip As New ToolTip
+                    NewTip.SetToolTip(NewWeakness, "1¼×")
+                ElseIf pokedata(24)(i) = 250 Then
+                    Dim NewTip As New ToolTip
+                    NewTip.SetToolTip(NewWeakness, "2½×")
+                ElseIf pokedata(24)(i) = 500 Then
+                    NewWeakness.BackColor = Color.DarkRed
+                    Dim NewTip As New ToolTip
+                    NewTip.SetToolTip(NewWeakness, "5×")
+                ElseIf pokedata(24)(i) > 200 Then
                     NewWeakness.BackColor = Color.DarkRed
                     Dim NewTip As New ToolTip
                     NewTip.SetToolTip(NewWeakness, "4×")
@@ -569,14 +614,6 @@ Public Class Form1
                 StartResist += 38
             End If
         Next
-
-        pkm1_species.Text = pokedata(21)
-
-        pokemonNames(0) = pokedata(5)
-        UpdateTab1()
-
-        CalcStats1()
-
     End Sub
 
     Public Sub UpdateTab1()
@@ -891,7 +928,23 @@ Public Class Form1
             pkm2_gender.Enabled = False
         End If
 
+        CalcWeakResist1(pokedata)
 
+        pkm2_species.Text = pokedata(21)
+
+        pokemonNames(1) = pokedata(5)
+        UpdateTab2()
+
+        CalcStats2()
+    End Sub
+
+    Private Sub pkm2_ability_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pkm2_ability.SelectedIndexChanged
+        Dim pokedata() As Object = UpdateMon(pkm2.SelectedIndex)
+        CalcWeakResist1(pokedata)
+    End Sub
+
+    'This one MUST be bassed by value to not upset the original values
+    Public Sub CalcWeakResist1(ByVal pokedata() As Object)
         For i = 1 To pkm2_weaknesses.Controls.Count
             pkm2_weaknesses.Controls(0).Dispose()
         Next
@@ -901,6 +954,25 @@ Public Class Form1
 
         Dim StartWeak As UShort = 4
         Dim StartResist As UShort = 4
+
+        Dim Efficacies As UShort()
+        If pkm2_ability.Items.Count > 0 Then
+            Efficacies = AbilityEfficacy(pkm2_ability.Items(pkm2_ability.SelectedIndex))
+        Else
+            Efficacies = AbilityEfficacy("")
+        End If
+
+
+        For i = 0 To 17
+            '0 is a stub
+            If i > 0 Then
+                If Efficacies(i) > 150 Or Efficacies(i) < 100 Then
+                    pokedata(24)(i - 1) = Efficacies(i)
+                ElseIf Efficacies(i) = 125 Then
+                    pokedata(24)(i - 1) *= 1.25
+                End If
+            End If
+        Next
 
         For i = 0 To 16
             If pokedata(24)(i) > 100 Then
@@ -912,7 +984,17 @@ Public Class Form1
                 NewWeakness.Tag = "type" & (i + 1)
                 NewWeakness.Location = New System.Drawing.Point(StartWeak, 12)
                 '4x
-                If pokedata(24)(i) > 200 Then
+                If pokedata(24)(i) = 125 Then
+                    Dim NewTip As New ToolTip
+                    NewTip.SetToolTip(NewWeakness, "1¼×")
+                ElseIf pokedata(24)(i) = 250 Then
+                    Dim NewTip As New ToolTip
+                    NewTip.SetToolTip(NewWeakness, "2½×")
+                ElseIf pokedata(24)(i) = 500 Then
+                    NewWeakness.BackColor = Color.DarkRed
+                    Dim NewTip As New ToolTip
+                    NewTip.SetToolTip(NewWeakness, "5×")
+                ElseIf pokedata(24)(i) > 200 Then
                     NewWeakness.BackColor = Color.DarkRed
                     Dim NewTip As New ToolTip
                     NewTip.SetToolTip(NewWeakness, "4×")
@@ -945,13 +1027,6 @@ Public Class Form1
                 StartResist += 38
             End If
         Next
-
-        pkm2_species.Text = pokedata(21)
-
-        pokemonNames(1) = pokedata(5)
-        UpdateTab2()
-
-        CalcStats2()
     End Sub
 
     Public Sub UpdateTab2()
@@ -1266,7 +1341,23 @@ Public Class Form1
             pkm3_gender.Enabled = False
         End If
 
+        CalcWeakResist3(pokedata)
 
+        pkm3_species.Text = pokedata(21)
+
+        pokemonNames(2) = pokedata(5)
+        UpdateTab3()
+
+        CalcStats3()
+    End Sub
+
+    Private Sub pkm3_ability_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pkm3_ability.SelectedIndexChanged
+        Dim pokedata() As Object = UpdateMon(pkm3.SelectedIndex)
+        CalcWeakResist3(pokedata)
+    End Sub
+
+    'This one MUST be bassed by value to not upset the original values
+    Public Sub CalcWeakResist3(ByVal pokedata() As Object)
         For i = 1 To pkm3_weaknesses.Controls.Count
             pkm3_weaknesses.Controls(0).Dispose()
         Next
@@ -1276,6 +1367,25 @@ Public Class Form1
 
         Dim StartWeak As UShort = 4
         Dim StartResist As UShort = 4
+
+        Dim Efficacies As UShort()
+        If pkm3_ability.Items.Count > 0 Then
+            Efficacies = AbilityEfficacy(pkm3_ability.Items(pkm3_ability.SelectedIndex))
+        Else
+            Efficacies = AbilityEfficacy("")
+        End If
+
+
+        For i = 0 To 17
+            '0 is a stub
+            If i > 0 Then
+                If Efficacies(i) > 150 Or Efficacies(i) < 100 Then
+                    pokedata(24)(i - 1) = Efficacies(i)
+                ElseIf Efficacies(i) = 125 Then
+                    pokedata(24)(i - 1) *= 1.25
+                End If
+            End If
+        Next
 
         For i = 0 To 16
             If pokedata(24)(i) > 100 Then
@@ -1287,7 +1397,17 @@ Public Class Form1
                 NewWeakness.Tag = "type" & (i + 1)
                 NewWeakness.Location = New System.Drawing.Point(StartWeak, 12)
                 '4x
-                If pokedata(24)(i) > 200 Then
+                If pokedata(24)(i) = 125 Then
+                    Dim NewTip As New ToolTip
+                    NewTip.SetToolTip(NewWeakness, "1¼×")
+                ElseIf pokedata(24)(i) = 250 Then
+                    Dim NewTip As New ToolTip
+                    NewTip.SetToolTip(NewWeakness, "2½×")
+                ElseIf pokedata(24)(i) = 500 Then
+                    NewWeakness.BackColor = Color.DarkRed
+                    Dim NewTip As New ToolTip
+                    NewTip.SetToolTip(NewWeakness, "5×")
+                ElseIf pokedata(24)(i) > 200 Then
                     NewWeakness.BackColor = Color.DarkRed
                     Dim NewTip As New ToolTip
                     NewTip.SetToolTip(NewWeakness, "4×")
@@ -1320,13 +1440,6 @@ Public Class Form1
                 StartResist += 38
             End If
         Next
-
-        pkm3_species.Text = pokedata(21)
-
-        pokemonNames(2) = pokedata(5)
-        UpdateTab3()
-
-        CalcStats3()
     End Sub
 
     Public Sub UpdateTab3()
@@ -1641,7 +1754,23 @@ Public Class Form1
             pkm4_gender.Enabled = False
         End If
 
+        CalcWeakResist4(pokedata)
 
+        pkm4_species.Text = pokedata(21)
+
+        pokemonNames(3) = pokedata(5)
+        UpdateTab4()
+
+        CalcStats4()
+    End Sub
+
+    Private Sub pkm4_ability_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pkm4_ability.SelectedIndexChanged
+        Dim pokedata() As Object = UpdateMon(pkm4.SelectedIndex)
+        CalcWeakResist4(pokedata)
+    End Sub
+
+    'This one MUST be bassed by value to not upset the original values
+    Public Sub CalcWeakResist4(ByVal pokedata() As Object)
         For i = 1 To pkm4_weaknesses.Controls.Count
             pkm4_weaknesses.Controls(0).Dispose()
         Next
@@ -1651,6 +1780,25 @@ Public Class Form1
 
         Dim StartWeak As UShort = 4
         Dim StartResist As UShort = 4
+
+        Dim Efficacies As UShort()
+        If pkm4_ability.Items.Count > 0 Then
+            Efficacies = AbilityEfficacy(pkm4_ability.Items(pkm4_ability.SelectedIndex))
+        Else
+            Efficacies = AbilityEfficacy("")
+        End If
+
+
+        For i = 0 To 17
+            '0 is a stub
+            If i > 0 Then
+                If Efficacies(i) > 150 Or Efficacies(i) < 100 Then
+                    pokedata(24)(i - 1) = Efficacies(i)
+                ElseIf Efficacies(i) = 125 Then
+                    pokedata(24)(i - 1) *= 1.25
+                End If
+            End If
+        Next
 
         For i = 0 To 16
             If pokedata(24)(i) > 100 Then
@@ -1662,7 +1810,17 @@ Public Class Form1
                 NewWeakness.Tag = "type" & (i + 1)
                 NewWeakness.Location = New System.Drawing.Point(StartWeak, 12)
                 '4x
-                If pokedata(24)(i) > 200 Then
+                If pokedata(24)(i) = 125 Then
+                    Dim NewTip As New ToolTip
+                    NewTip.SetToolTip(NewWeakness, "1¼×")
+                ElseIf pokedata(24)(i) = 250 Then
+                    Dim NewTip As New ToolTip
+                    NewTip.SetToolTip(NewWeakness, "2½×")
+                ElseIf pokedata(24)(i) = 500 Then
+                    NewWeakness.BackColor = Color.DarkRed
+                    Dim NewTip As New ToolTip
+                    NewTip.SetToolTip(NewWeakness, "5×")
+                ElseIf pokedata(24)(i) > 200 Then
                     NewWeakness.BackColor = Color.DarkRed
                     Dim NewTip As New ToolTip
                     NewTip.SetToolTip(NewWeakness, "4×")
@@ -1695,13 +1853,6 @@ Public Class Form1
                 StartResist += 38
             End If
         Next
-
-        pkm4_species.Text = pokedata(21)
-
-        pokemonNames(3) = pokedata(5)
-        UpdateTab4()
-
-        CalcStats4()
     End Sub
 
     Public Sub UpdateTab4()
@@ -2016,7 +2167,23 @@ Public Class Form1
             pkm5_gender.Enabled = False
         End If
 
+        CalcWeakResist5(pokedata)
 
+        pkm5_species.Text = pokedata(21)
+
+        pokemonNames(4) = pokedata(5)
+        UpdateTab5()
+
+        CalcStats5()
+    End Sub
+
+    Private Sub pkm5_ability_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pkm5_ability.SelectedIndexChanged
+        Dim pokedata() As Object = UpdateMon(pkm5.SelectedIndex)
+        CalcWeakResist5(pokedata)
+    End Sub
+
+    'This one MUST be bassed by value to not upset the original values
+    Public Sub CalcWeakResist5(ByVal pokedata() As Object)
         For i = 1 To pkm5_weaknesses.Controls.Count
             pkm5_weaknesses.Controls(0).Dispose()
         Next
@@ -2026,6 +2193,25 @@ Public Class Form1
 
         Dim StartWeak As UShort = 4
         Dim StartResist As UShort = 4
+
+        Dim Efficacies As UShort()
+        If pkm5_ability.Items.Count > 0 Then
+            Efficacies = AbilityEfficacy(pkm5_ability.Items(pkm5_ability.SelectedIndex))
+        Else
+            Efficacies = AbilityEfficacy("")
+        End If
+
+
+        For i = 0 To 17
+            '0 is a stub
+            If i > 0 Then
+                If Efficacies(i) > 150 Or Efficacies(i) < 100 Then
+                    pokedata(24)(i - 1) = Efficacies(i)
+                ElseIf Efficacies(i) = 125 Then
+                    pokedata(24)(i - 1) *= 1.25
+                End If
+            End If
+        Next
 
         For i = 0 To 16
             If pokedata(24)(i) > 100 Then
@@ -2037,7 +2223,17 @@ Public Class Form1
                 NewWeakness.Tag = "type" & (i + 1)
                 NewWeakness.Location = New System.Drawing.Point(StartWeak, 12)
                 '4x
-                If pokedata(24)(i) > 200 Then
+                If pokedata(24)(i) = 125 Then
+                    Dim NewTip As New ToolTip
+                    NewTip.SetToolTip(NewWeakness, "1¼×")
+                ElseIf pokedata(24)(i) = 250 Then
+                    Dim NewTip As New ToolTip
+                    NewTip.SetToolTip(NewWeakness, "2½×")
+                ElseIf pokedata(24)(i) = 500 Then
+                    NewWeakness.BackColor = Color.DarkRed
+                    Dim NewTip As New ToolTip
+                    NewTip.SetToolTip(NewWeakness, "5×")
+                ElseIf pokedata(24)(i) > 200 Then
                     NewWeakness.BackColor = Color.DarkRed
                     Dim NewTip As New ToolTip
                     NewTip.SetToolTip(NewWeakness, "4×")
@@ -2070,13 +2266,6 @@ Public Class Form1
                 StartResist += 38
             End If
         Next
-
-        pkm5_species.Text = pokedata(21)
-
-        pokemonNames(4) = pokedata(5)
-        UpdateTab5()
-
-        CalcStats5()
     End Sub
 
     Public Sub UpdateTab5()
@@ -2391,7 +2580,23 @@ Public Class Form1
             pkm6_gender.Enabled = False
         End If
 
+        CalcWeakResist6(pokedata)
 
+        pkm6_species.Text = pokedata(21)
+
+        pokemonNames(5) = pokedata(5)
+        UpdateTab6()
+
+        CalcStats6()
+    End Sub
+
+    Private Sub pkm6_ability_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pkm6_ability.SelectedIndexChanged
+        Dim pokedata() As Object = UpdateMon(pkm6.SelectedIndex)
+        CalcWeakResist6(pokedata)
+    End Sub
+
+    'This one MUST be bassed by value to not upset the original values
+    Public Sub CalcWeakResist6(ByVal pokedata() As Object)
         For i = 1 To pkm6_weaknesses.Controls.Count
             pkm6_weaknesses.Controls(0).Dispose()
         Next
@@ -2401,6 +2606,25 @@ Public Class Form1
 
         Dim StartWeak As UShort = 4
         Dim StartResist As UShort = 4
+
+        Dim Efficacies As UShort()
+        If pkm6_ability.Items.Count > 0 Then
+            Efficacies = AbilityEfficacy(pkm6_ability.Items(pkm6_ability.SelectedIndex))
+        Else
+            Efficacies = AbilityEfficacy("")
+        End If
+
+
+        For i = 0 To 17
+            '0 is a stub
+            If i > 0 Then
+                If Efficacies(i) > 150 Or Efficacies(i) < 100 Then
+                    pokedata(24)(i - 1) = Efficacies(i)
+                ElseIf Efficacies(i) = 125 Then
+                    pokedata(24)(i - 1) *= 1.25
+                End If
+            End If
+        Next
 
         For i = 0 To 16
             If pokedata(24)(i) > 100 Then
@@ -2412,7 +2636,17 @@ Public Class Form1
                 NewWeakness.Tag = "type" & (i + 1)
                 NewWeakness.Location = New System.Drawing.Point(StartWeak, 12)
                 '4x
-                If pokedata(24)(i) > 200 Then
+                If pokedata(24)(i) = 125 Then
+                    Dim NewTip As New ToolTip
+                    NewTip.SetToolTip(NewWeakness, "1¼×")
+                ElseIf pokedata(24)(i) = 250 Then
+                    Dim NewTip As New ToolTip
+                    NewTip.SetToolTip(NewWeakness, "2½×")
+                ElseIf pokedata(24)(i) = 500 Then
+                    NewWeakness.BackColor = Color.DarkRed
+                    Dim NewTip As New ToolTip
+                    NewTip.SetToolTip(NewWeakness, "5×")
+                ElseIf pokedata(24)(i) > 200 Then
                     NewWeakness.BackColor = Color.DarkRed
                     Dim NewTip As New ToolTip
                     NewTip.SetToolTip(NewWeakness, "4×")
@@ -2445,13 +2679,6 @@ Public Class Form1
                 StartResist += 38
             End If
         Next
-
-        pkm6_species.Text = pokedata(21)
-
-        pokemonNames(5) = pokedata(5)
-        UpdateTab6()
-
-        CalcStats6()
     End Sub
 
     Public Sub UpdateTab6()
@@ -2773,7 +3000,7 @@ Public Class Form1
                           pkm5_weaknesses, pkm6_weaknesses}
             For Each Ctrl In WkCtrl.Controls
                 Select Case Ctrl.BackColor
-                    Case Color.DarkSlateBlue
+                    Case Color.DarkRed
                         TableLayoutPanel1.Controls(Ctrl.Tag & "_4").Text = Val(TableLayoutPanel1.Controls(Ctrl.Tag & "_4").Text) + 1
                    Case Else
                         TableLayoutPanel1.Controls(Ctrl.Tag & "_2").Text = Val(TableLayoutPanel1.Controls(Ctrl.Tag & "_2").Text) + 1
@@ -2793,7 +3020,7 @@ Public Class Form1
                           pkm5_resistances, pkm6_resistances}
             For Each Ctrl In RsCtrl.Controls
                 Select Case Ctrl.BackColor
-                    Case Color.DarkRed
+                    Case Color.Green
                         TableLayoutPanel1.Controls(Ctrl.Tag & "_14").Text = Val(TableLayoutPanel1.Controls(Ctrl.Tag & "_14").Text) + 1
                     Case Color.Black
                         TableLayoutPanel1.Controls(Ctrl.Tag & "_0").Text = Val(TableLayoutPanel1.Controls(Ctrl.Tag & "_0").Text) + 1
@@ -4358,4 +4585,40 @@ Public Class Form1
         TextExport.TextExportString.Text = PlainString
         TextExport.Show()
     End Sub
+
+    Public Function AbilityEfficacy(ByVal Ability As String) As UShort()
+        'The first value is a stub to represent type 0
+        Dim Efficacies() As UShort = {100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100}
+        Select Case Ability
+            Case "Levitate"
+                Efficacies(5) = 0  'Immune to Ground
+            Case "Flash Fire"
+                Efficacies(10) = 0 'Immune to Fire
+            Case "Water Absorb"
+                Efficacies(11) = 0 'Immune to Water
+            Case "Volt Absorb"
+                Efficacies(13) = 0 'Immune to Electric
+            Case "Lightningrod"
+                Efficacies(13) = 0 'Immune to Electric
+            Case "Sap Sipper"
+                Efficacies(12) = 0 'Immune to Grass
+            Case "Dry Skin"
+                Efficacies(11) = 0 'Immune to Water
+                Efficacies(10) = 125 'Increases weakness against fire to 125%
+            Case "Storm Drain"
+                Efficacies(11) = 0 'Immune to Water
+            Case "Motor Drive"
+                Efficacies(13) = 0 'Immune to Electric
+            Case "Thick Fat"
+                Efficacies(10) = 50 'Resistant to Fire
+                Efficacies(15) = 50 'Resistant to Ice
+            Case "Heatproof"
+                Efficacies(10) = 50 'Resistant to Fire
+            Case "Wonder Guard"
+                'This ability is fun :P
+                Efficacies = {100, 0, 0, 200, 0, 200, 200, 0, 0, 0, 200, 0, 0, 0, 0, 0, 0, 200}
+        End Select
+        Return Efficacies
+    End Function
+
 End Class

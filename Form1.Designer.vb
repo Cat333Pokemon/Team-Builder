@@ -33,6 +33,7 @@ Me.SaveAsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
 Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
 Me.ExportToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
 Me.SaveAsCSVToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+Me.ExportTextToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
 Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
 Me.PrintToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
 Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
@@ -778,7 +779,6 @@ Me.SaveMonDialog = New System.Windows.Forms.SaveFileDialog()
 Me.OpenMonDialog = New System.Windows.Forms.OpenFileDialog()
 Me.SaveHTMLDialog = New System.Windows.Forms.SaveFileDialog()
 Me.SaveCSVDialog = New System.Windows.Forms.SaveFileDialog()
-Me.ExportTextToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
 Me.MenuStrip1.SuspendLayout
 Me.Tabs.SuspendLayout
 Me.TabPage1.SuspendLayout
@@ -1045,6 +1045,12 @@ Me.ExportToolStripMenuItem.Text = "Export &HTML..."
 Me.SaveAsCSVToolStripMenuItem.Name = "SaveAsCSVToolStripMenuItem"
 Me.SaveAsCSVToolStripMenuItem.Size = New System.Drawing.Size(181, 22)
 Me.SaveAsCSVToolStripMenuItem.Text = "Export CS&V..."
+'
+'ExportTextToolStripMenuItem
+'
+Me.ExportTextToolStripMenuItem.Name = "ExportTextToolStripMenuItem"
+Me.ExportTextToolStripMenuItem.Size = New System.Drawing.Size(181, 22)
+Me.ExportTextToolStripMenuItem.Text = "Export &Text"
 '
 'ToolStripSeparator3
 '
@@ -8919,12 +8925,6 @@ Me.SaveHTMLDialog.Title = "Export Team To HTML"
 Me.SaveCSVDialog.DefaultExt = "csv"
 Me.SaveCSVDialog.Filter = "Comma-Separated Values|*.csv|All Files|*.*"
 Me.SaveCSVDialog.Title = "Export Team To CSV"
-'
-'ExportTextToolStripMenuItem
-'
-Me.ExportTextToolStripMenuItem.Name = "ExportTextToolStripMenuItem"
-Me.ExportTextToolStripMenuItem.Size = New System.Drawing.Size(181, 22)
-Me.ExportTextToolStripMenuItem.Text = "Export &Text"
 '
 'Form1
 '
