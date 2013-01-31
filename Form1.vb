@@ -4616,7 +4616,7 @@ Public Class Form1
                 Efficacies(10) = 50 'Resistant to Fire
             Case "Wonder Guard"
                 'This ability is fun :P
-                Efficacies = {100, 0, 0, 200, 0, 200, 200, 0, 0, 0, 200, 0, 0, 0, 0, 0, 0, 200}
+                Efficacies = {100, 0, 0, 200, 0, 0, 200, 0, 200, 0, 200, 0, 0, 0, 0, 0, 0, 200}
         End Select
         Return Efficacies
     End Function

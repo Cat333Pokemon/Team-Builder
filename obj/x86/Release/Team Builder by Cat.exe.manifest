@@ -4,7 +4,7 @@
   <description asmv2:iconFile="AppIcon2.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="Team Builder by Cat" version="1.4.0.0" language="neutral" processorArchitecture="x86" />
+    <assemblyIdentity name="Team Builder by Cat" version="1.5.0.0" language="neutral" processorArchitecture="x86" />
     <commandLine file="Team Builder by Cat.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -49,13 +49,13 @@
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Team Builder by Cat.exe" size="2035712">
-      <assemblyIdentity name="Team Builder by Cat" version="1.4.0.0" language="neutral" processorArchitecture="x86" />
+      <assemblyIdentity name="Team Builder by Cat" version="1.5.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>nM7gjDfBqySdIk63eCdNi6IMm+c=</dsig:DigestValue>
+        <dsig:DigestValue>8cElVdWOSm4y+Z4QQUp53Cp24i8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -83,7 +83,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>drxvwK5QltZvOBNOMXd0CJqFDNI=</dsig:DigestValue>
+      <dsig:DigestValue>rIwCJGGp43IXgXJZ/R3gxPFS+XA=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Team Builder by Cat.exe.config" size="488">
