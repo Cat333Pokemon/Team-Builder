@@ -2,6 +2,8 @@
 
 This program is designed to assist competitive battlers interested in creating teams and analyzing their usefulness. Using data from the veekun Pokédex project, I've compiled a simplified database of essential Black & White 2 data to help create the perfect team.
 
+The utility was built with Visual Studio 2010.
+
 ## Features
 
 - Stat calculation, which takes into account IVs, EVs, and nature
